@@ -1,0 +1,142 @@
+
+
+/* ==========================================================================
+   Blocked custom styles
+   ========================================================================== */
+
+html { font-size: 62.5%; } 
+body { 
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #2e2e2e;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    }
+
+
+
+/* ORG header bar */
+
+.org-header {
+    background: black;
+    color: white;
+    height: 48px;
+    padding-top: 10px;
+    text-align: right;
+    }
+    
+
+    
+/* main nav bar */
+
+.navbar-brand {
+    font-size: 3.6rem;
+    font-weight: 900;
+    }
+
+.navbar a {
+    color: #2e2e2e;
+    }
+
+.nav-items {
+    float: right;
+    }
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+    background-color: white;
+    text-decoration: underline;
+    color: #d62027;
+    }
+    
+.navbar-nav > li > a {
+        padding: 24px 0 0 24px;
+    }
+    
+.navbar-collapse {
+    padding-right: 0;
+    }
+
+    
+    
+/* main content */
+
+h1, h2 {
+    font-size: 3.6rem;
+    font-weight: 900;
+    margin: 24px 0;
+    }
+
+h3 {
+    font-weight: 300;
+    margin: 24px 0;
+    }
+
+a {
+    color: #d62027;
+    }    
+    
+.content,
+.content-inverse,
+.content .row,
+.content-inverse .row{
+    margin-bottom: 24px;
+    }
+
+.circle {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	background: url() no-repeat;
+	}
+
+
+    
+/* inversed content */
+
+.content-inverse {
+    background: #d62027;
+    color: white;
+    }
+
+.content-inverse .btn-primary {
+    background-color: #14867e;
+    background-image: linear-gradient(to bottom, #34a69e 0px, #14867e 100%);
+    background-repeat: repeat-x;
+    border-color: #04665e;
+    }
+
+.content-inverse a {
+    color: white;
+    text-decoration: underline;
+    }
+
+
+
+
+
+
+
+/* footer */
+
+footer {
+    background: black;
+    color: white;
+    margin-top: 48px;
+    padding: 16px 0;
+    }
+
+.footer-links {
+    padding-top: 36px;
+    }
+
+.footer-links a {
+    color: white;
+    padding: 0 16px;
+    }
+
+.footer-links a:first-of-type {
+    padding-left: 0;
+    }
