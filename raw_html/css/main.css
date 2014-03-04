@@ -38,26 +38,38 @@ body {
     color: #2e2e2e;
     }
 
-.nav-items {
-    float: right;
-    }
-
-.nav > li > a:hover,
-.nav > li > a:focus {
-    background-color: transparent;
-    text-decoration: underline;
-    color: #d62027;
-    }
-    
-.navbar-nav > li > a {
-        padding: 24px 0 0 24px;
-    }
-    
 .navbar-collapse {
-    padding-right: 0;
+    background: #ddd;
     }
-
     
+.navbar-toggle {
+    background: #d62027;
+    color: white;
+    }
+    
+/* full width nav */
+    
+@media (min-width: 926px) {
+    .nav-items {
+        float: right;
+        }
+        
+    .navbar-nav > li > a {
+            padding: 24px 0 0 24px;
+        }
+
+    .navbar-collapse {
+        padding-right: 0;
+        background: none;
+        }        
+
+    .nav > li > a:hover,
+    .nav > li > a:focus {
+        background-color: transparent;
+        text-decoration: underline;
+        color: #d62027;
+        }
+}
     
 /* main content */
 
