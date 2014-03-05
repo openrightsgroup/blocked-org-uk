@@ -13,8 +13,8 @@ body {
     font-weight: 400;
     }
 
-
-
+    
+    
 /* ORG header bar */
 
 .org-header {
@@ -86,7 +86,12 @@ h3 {
 
 a {
     color: #d62027;
-    }    
+    transition: .5s;
+    }
+    
+a:hover {
+    color: #60114e;
+    }
     
 .content,
 .content-inverse,
@@ -127,7 +132,24 @@ a {
 
 
 
+/* stats & eye candy */
 
+.stat {
+    margin: 24px 0;
+    }
+
+.big-stat {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    font-weight: 900;
+    }
+
+.little-stat {
+    margin-top: -0.8rem;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    font-weight: 900;
+    }
 
 
 
