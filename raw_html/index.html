@@ -22,7 +22,6 @@
     <body>
         <div class="org-header">
             <div class="container">
-                ORG intro goes here
                 <a href="https://www.openrightsgroup.org/">
                     <img src="img/layout/openrightsgroupmini.png" width="75" height="28" alt="Open Rights Group">
                 </a>
@@ -42,11 +41,13 @@
                 <div class="navbar-collapse collapse nav-items">
                     <ul class="nav navbar-nav">
                         <li><a href="results.html">Check a site</a></li>
-                        <li><a href="">Unblock a site</a></li>
-                        <li><a href="">Personal stories</a></li>
-                        <li><a href="">The project</a></li>
-                        <li><a href="">Help us</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="unblock.html">Unblock a site</a></li>
+                        <li><a href="personalstories.html">Personal stories</a></li>
+                        <li><a href="project.html">The project</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="getinvolved.html">Get involved</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul> 
                 </div>
             </div>
@@ -65,7 +66,7 @@
                 </div>
                 <div class="col-md-9">
                   <h1>Are you being censored?</h1>
-                  <p>Please check this page and the 'check a site page' (link in top nav). Lorem Ipsum. <a href='#'>Proin gravida</a> nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                  <p>Filtering technologies are being promoted by government as a means to prevent children from accessing inappropriate sexual material. However in practice, many more people are finding themselves behind filters, which block a much wider range of material. Sometimes, like blogs or forums, this may be deliberate but not really necessary, while at other times, it can be by mistake.</p>
                 </div>
             </div>
         </div>
@@ -77,32 +78,27 @@
                     <div class="col-md-3"></div>
                     <div class="col-md-6">
                         <h2>Check if a site is being censored</h2>
-                        <p>Enter the address of a site to submit it our automated censorship checker, we’ll then check the site across several Internet providers.</p>
+                        <p>Enter the address of a site to submit it our automated censorship checker, we'll then check the site across several Internet providers.</p>
 
                         <form role="form" method="post" action=''>
                             <div class="form-group">
                                 <label for="domainToCheck">Domain to check</label>
                                 <input type="url" class="form-control" name="domainToCheck" id="domainToCheck" placeholder="http://example.com">
                             </div>  
-                            <button type="submit" class="btn btn-primary">Submit site for checking</button>
-                            <button type="submit" class="btn btn-default">View previous results for this site</button>
-                        </form>
-
-                        <h3>We've sent example.com for testing</h3>
-                        <p>It may be a while before our probes are able to return a result, you can either revisit this page at a later date or you can enter your email below and we will email you once the test has completed.</p>
-
-                        <form role="form" method="post" action=''>
                             <div class="form-group">
-                                <label for="email">Your email</label>
-                                <input type="email" class="form-control" name="email" id="email" placeholder="enter email">
+                               <label for="email">Enter your email to be notified when the test has run (optional)</label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Enter email (optional)">
                             </div>                        
                             <div class="form-group">
                                 <input type="checkbox" name="optin" id="optin">
                                 <label for="optin">I'd like to join the ORG mailing list (<a href="privacy">view privacy policy</a>).</label>
                             </div>
-                            <button type="submit" class="btn btn-primary">Notify me once the tests have completed</button>
+                            <button type="submit" class="btn btn-primary" id="home-check-site-btn">Submit site for checking</button>
+                            <button type="submit" class="btn btn-default" id="home-view-results-btn">View previous results for this site</button>
                         </form>
 
+                        <h3>We've sent example.com for testing</h3>
+                        <p>It may be a while before our probes are able to return a result, you can either revisit this page at a later date if you entered your email below we will email you once the test has completed.</p>
 
                         <h2>Help us fight censorship</h2>
                         <p>If you can provide us with more information about the site, and how it being blocked has affected you personally then it will help ORG campaign against censorship.</p>

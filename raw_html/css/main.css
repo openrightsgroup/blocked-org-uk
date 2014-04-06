@@ -82,6 +82,7 @@ h1, h2 {
 h3 {
     font-weight: 300;
     margin: 24px 0;
+    padding-top: 1.32px;
     }
 
 a {
@@ -130,7 +131,11 @@ a:hover {
     text-decoration: underline;
     }
 
-
+.content-inverse .label-important a,
+.content-inverse .alert-error,
+.content-inverse .alert-error a{
+    color: yellow;
+    }
 
 /* stats & eye candy */
 
