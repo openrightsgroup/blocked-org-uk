@@ -14,7 +14,6 @@ body {
     }
 
     
-    
 /* ORG header bar */
 
 .org-header {
@@ -46,6 +45,7 @@ body {
     background: #d62027;
     color: white;
     }
+    
     
 /* full width nav */
     
@@ -82,7 +82,6 @@ h1, h2 {
 h3 {
     font-weight: 300;
     margin: 24px 0;
-    padding-top: 1.32rem;
     }
 
 a {
@@ -110,8 +109,26 @@ a:hover {
 	background: url() no-repeat;
 	}
 
+.content .pad-row-after,
+.content .pad-row-after {
+    margin-bottom: 72px;
+    }
 
     
+/* personal stories */
+
+.story-small h3 {
+    margin-top: 0;
+}
+    
+
+/* news */
+
+.article-image {
+    margin-top: 24px;
+    }
+
+
 /* inversed content */
 
 .content-inverse {
@@ -137,6 +154,10 @@ a:hover {
     color: yellow;
     }
 
+.pad-inverse-cont {
+    padding-top: 24px;
+    }
+    
 /* stats & eye candy */
 
 .stat {
@@ -156,9 +177,6 @@ a:hover {
     font-weight: 900;
     }
 
-.map-cont {
-    padding-top: 24px;
-    }
 
 
 /* footer */
