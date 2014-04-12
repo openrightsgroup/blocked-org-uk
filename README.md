@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/openrightsgroup/blocked-org-uk.png?label=ready&title=Ready)](https://waffle.io/openrightsgroup/blocked-org-uk)
 blocked-org-uk
 ==============
 
