@@ -17,7 +17,7 @@
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         
         <link rel="icon" type="image/ico" href="favicon.ico" />       
-        <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
         
     </head>
     <body>
@@ -61,9 +61,24 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="stat">
-                        <p class="big-stat">23,919</p>
-                        <p class="little-stat">SITES WRONGLY BLOCKED</p>
+                        <p class="big-stat">14081</p>
+                        <p class="little-stat">SITES BLOCKED</p>
                     </div>
+                        <div class="circle-graph-small" id="circles-1"></div>
+                        <script>
+                    Circles.create({
+    id:         'circles-1',
+    percentage: 14081/102691*100,
+    radius:     36,
+    width:      10,
+    number:     Math.round(14081/102691*100),
+    text:       '%',
+    colors:     ['#D3B6C6', '#4B253A'],
+    duration:   400
+});
+
+                        </script>
+                    
                 </div>
                 <div class="col-md-9">
                   <h1>Are you being censored?</h1>
@@ -76,7 +91,16 @@
         <div class="content-inverse">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3"></div>
+                    <div class="col-md-3">
+                        <div class="stat">
+                            <p class="big-stat">528683</p>
+                            <p class="little-stat">TESTS PENDING</p>
+                        </div>
+                        <div class="stat">
+                            <p class="big-stat">102691</p>
+                            <p class="little-stat">SITES CHECKED</p>
+                        </div>
+                    </div>
                     <div class="col-md-6">
                         <h2>Check if a site is being censored</h2>
                         <p>Enter the address of a site to submit it our automated censorship checker, we'll then check the site across several Internet providers.</p>
@@ -129,7 +153,7 @@
 
                 <div class="row">
                     <div class="col-md-3">
-                        <img src="img/" class="img-responsive img-circle hidden-xs hidden-sm">
+                        <img src="#" class="img-responsive img-circle hidden-xs hidden-sm">
                     </div>
                     <div class="col-md-9">
                         <h3>Title of personal story</h3>
@@ -162,8 +186,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-
-        <script src="js/main.js"></script>
+        <script src="js/vendor/circles.js" type="text/javascript"></script>
 
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
