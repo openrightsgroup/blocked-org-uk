@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+       
+        <link rel="icon" type="image/ico" href="favicon.ico" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
+        
+    </head>
+    <body>
+        <div class="org-header">
+            <div class="container">
+                <a href="https://www.openrightsgroup.org/">
+                    <img src="img/layout/openrightsgroupmini.png" width="75" height="28" alt="Open Rights Group">
+                </a>
+            </div>
+        </div>
+        
+    
+       
+        <div class="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="glyphicon glyphicon-list"> </span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Blocked!</a>
+                </div>
+                <div class="navbar-collapse collapse nav-items">
+                    <ul class="nav navbar-nav">
+                        <li><a href="results.html">Check a site</a></li>
+                        <li><a href="unblock.html">Unblock a site</a></li>
+                        <li><a href="personalstories.html">Personal stories</a></li>
+                        <li><a href="project.html">The project</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="getinvolved.html">Get involved</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul> 
+                </div>
+            </div>
+        </div>   
+        
+        
+        <div class="container content">
+            <div class="row">
+                <div class="col-md-9">
+                    <h2>Ignore this text!</h2>
+                    <h3>This page is just to create and test the CTAs on the right</h3>
+                    <p>We have a page on our wiki describing the <a title="Censorship Monitoring Project Status" href="https://wiki.openrightsgroup.org/wiki/Censorship_Monitoring_Project_Status">current status</a> of each part of the project.</p>
+                    <h3>Website development</h3>
+                    <p>If web design is your passion we'd love your help tweaking and expanding the new blocked.org.uk site. We're particularly interested in hearing from people with Modx, PHP, bootstrap and javascript experience. You can <a title="Blocked.org.uk template design on github" href="https://github.com/openrightsgroup/blocked-org-uk">view the latest template design</a> on github. Please raise issues for any problems or suggestions you might have. Pull requests that fix issues or implement new features will be received gratefully!</p>
+                    <h3>Software development</h3>
+                    <p>We have plenty of ideas for features to add to our web back-end, database and API, and we're also producing libraries in various languages to help others build on our work. If you have PHP skills you can <a title="Censorship monitoring project API code repository on github" href="https://github.com/openrightsgroup/Blocking-Middleware">help improve our API</a>. We also have a <a title="Java library for ORG's probe API on github" href="https://github.com/openrightsgroup/Hadrians-garden">Java library in progress</a> if that's more your thing. If you don't see a library in your favourite language, why not start one? The <a title="Censorship Monitoring Project middleware API documentation on the ORG wiki" href="https://wiki.openrightsgroup.org/wiki/Censorship_Monitoring_Project_API">API documentation</a> is on our wiki.</p>
+                    <p>We have an <a title="App to detect internet filtering on google play" href="https://play.google.com/store/apps/details?id=uk.org.blocked.app">android app</a> (<a title="Android app source code on github" href="https://github.com/openrightsgroup/Android-Probe">source code</a>), a <a title="A python probe using the BlockingMiddleware API on github" href="https://github.com/dantheta/OrgProbe">python probe</a> and a <a title="Lepidopter image source code on github" href="https://github.com/openrightsgroup/lepidopter">Raspberry Pi image</a> set up to run <a title="Open Observatory of Network Interference" href="https://ooni.torproject.org/">OONI-probe</a>. We would love people to install, test, and hack on these.</p>
+                    <p>You are welcome to submit issues or pull requests against any of the repositories.</p>
+                    <h3>Testing</h3>
+                    <p>You can test the <a title="Blocked.org.uk template design on github" href="https://github.com/openrightsgroup/blocked-org-uk">new website template</a> on your devices and raise issues on github with your comments, suggestions and any bugs you find. Please raise one issue per bug / comment / suggestion so they can be worked on separately.</p>
+                    <p>You can also download and test the <a title="App to detect internet filtering on google play" href="https://play.google.com/store/apps/details?id=uk.org.blocked.app">android app</a>. Report bugs either via the Android interface or by raising issues on <a title="Android app source code on github" href="https://github.com/openrightsgroup/Android-Probe">github</a>.</p>
+                    <p>Lepidopter, the OONI probe image for Raspberry Pi, is also ready for testing. You can download the scripts to build the image from <a title="Lepidopter image source code on github" href="https://github.com/openrightsgroup/lepidopter">ORG's fork of the lepidopter github repository</a>. Again, we're using github issues to collect reports of any problems you find or suggestions for improvements.</p>
+                    <p>Any data you collect during these tests will help fill our database with results - which will help with other aspects of the project.</p>
+                    <h3>Interpretation of results</h3>
+                    <p>How does a probe know whether the response it receives to a HTTP request is the right resource or a message saying the page is blocked? Can we interpret blocking categories automatically? How can we make sense of the data we're collecting it and use it to achieve our goals? If these sound like interesting discussions you should <a title="ORG tech-volunteers mailing list" href="http://lists.openrightsgroup.org/listinfo/tech-volunteers">join our mailing list</a> and share your thoughts with us.</p>
+                    <p>We also need people to work on extracting, transforming and displaying the data we collect. We don't have any code to do this at the moment, but if you'd like to help out in this area, introduce yourself on the list and hit us up with your ideas.</p>
+                    <h3>Documentation</h3>
+                    <p>You can contribute documentation or translations for any software component or the website itself. Most areas are undocumented however the <a title="Censorship Monitoring Project middleware API documentation on the ORG wiki" href="https://wiki.openrightsgroup.org/wiki/Censorship_Monitoring_Project_API">API has reasonable documentation</a> on the wiki. You can either create wiki pages or github pull requests with any content you write.</p>
+                    <h3>Advocacy and publicity</h3>
+                    <p>There are a number of ways you can help advocate for the project:</p>
+                    <ul class="square">
+                    <li><a href="https://blocked.org.uk/">Report blocking via this site</a>. We're really interested in hearing compelling stories behind censored sites, so if you're a site owner or you've been prevented from accessing important information, please consider telling us about it.</li>
+                    <li>Spread the word. When you hear your friends complaining about site blocking or discussing censorship, send them to this site.</li>
+                    <li>Be part of the national conversation. Blog, tweet, post and comment about these issues, what they mean to you, and how you think things should work.</li>
+                    <li>Write to your MP, your ISP, and your local paper. The more people, companies and politicians we can get on our side, the more likely we are to win the political battle against online censorship.</li>
+                    <li><a title="ORG local groups" href="[[~6493]]">*****Join an ORG local group***** - or form your own</a>! Get together with like-minded people in your area, discuss the issues, and take action.</li>
+                    </ul>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                <div class="col-md-3">
+                    
+                    
+                    <div class="cta">
+                        <h3>Contact your MP</h3>
+                        <p>If MPs don't hear the concerns of their constituents they won't fight for the changes you they want to see. So please write to your local MP to share your concerns about censorship, or better yet, meet them and discuss in person.</p>
+                        <a href="#" class=" btn btn-primary">Contact your MP</a>
+                    </div>                    
+                    
+                    
+                    <div class="cta">
+                        <h3>Tell us your story</h3>
+                        <p>If you have been affected by government censorship please tell us how you were affected so we can use it to support our case against censorship.</p>
+                        <form action="[[~[[*id]]]]" method="post">
+
+                            <div class="form-group">
+                                <label for="information">Your story</label> 
+                                <textarea id="information" class="form-control" name="information">[[!+fi.information]]</textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                              <label for="SSQ97709WZ">Your email (optional), in case we would like to discuss this further.</label> 
+                              <input id="SSQ97709WZ" class="form-control" type="email" name="SSQ97709WZ" value="[[!+fi.SSQ97709WZ]]" />
+                            </div>
+                            
+                            <input id="url" type="hidden" name="url" value="" />
+                            <input id="email" type="hidden" name="email" value="" />
+                            
+                            <button id="home-check-site-btn" class="btn btn-primary" type="submit">Tell ORG your story</button> 
+                            
+                        </form>
+                    </div>                    
+                    
+                    
+                    <div class="cta">
+                        <h3>Get involved</h3>
+                        <p>You could easily help the campaign, we need techies to set up and run the systems. We also need anyone who can publicise the campaign and advocate it to their MP or newspapers.</p>
+                        <a href="#" class=" btn btn-primary">Get Involved</a>
+                    </div>
+                                        
+                    
+                    <div class="cta">
+                        <h3>Donate</h3>
+                        <p>We need money to do this, to meet costs including equipment and hosting costs, publicity, lobbying and employing a project manager to support the volunteers.</p>
+                        <a href="#" class=" btn btn-primary">Donate now</a>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                
+            </div>
+        </div>
+ 
+         
+        
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="https://www.openrightsgroup.org/">
+                            <img src="img/layout/openrightsgroup.png" width="152" height="57" alt="Open Rights Group">
+                        </a>
+                    </div>
+                    <div class="col-md-9 footer-links">
+                        <a href="#">News</a> | 
+                        <a href="#">Privacy</a> | 
+                        <a href="#">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </footer>     
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
