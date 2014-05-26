@@ -29,7 +29,7 @@ body {
 /* main nav bar */
 
 .navbar-brand {
-    font-size: 3.6rem;
+    font-size: 4.8rem;
     font-weight: 900;
     }
 
@@ -174,7 +174,6 @@ a:hover {
     margin-top: -0.8rem;
     font-size: 2.4rem;
     line-height: 2.4rem;
-    font-weight: 900;
     }
 
 
