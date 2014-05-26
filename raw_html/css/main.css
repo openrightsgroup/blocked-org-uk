@@ -174,8 +174,54 @@ a:hover {
     margin-top: -0.8rem;
     font-size: 2.4rem;
     line-height: 2.4rem;
+    font-weight: 300;
+    }
+    
+.graph {
+    font-weight: 300;
     }
 
+.graph p {
+    font-size: 2.4rem;
+    }
+
+
+/* Call to Actions */
+
+.cta {
+    padding: 24px;
+    }
+
+.cta a {
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 100%;
+    }
+
+.btn-primary {
+    background-color: #d62027;
+    background-image: -webkit-linear-gradient(top, #d62027 0%, #b60007 100%);
+    background-image: linear-gradient(to bottom, #d62027 0%, #b60007 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd62027', endColorstr='#ffb60007', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    border-color: #d01921;
+    }
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+    background-color: #b60007;
+    border-color: #a9131a;
+    }
+    
+/* helper classes */
+
+.float-left {
+    float: left;
+    margin-right: 10px;
+    }
 
 
 /* footer */
