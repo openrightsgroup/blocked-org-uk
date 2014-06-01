@@ -13,13 +13,14 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
-        
+
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-        
+
         <link rel="icon" type="image/ico" href="favicon.ico" />
         <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
-        
+
     </head>
+
     <body>
         <div class="org-header">
             <div class="container">
@@ -28,9 +29,9 @@
                 </a>
             </div>
         </div>
-        
-    
-       
+
+
+
         <div class="navbar">
             <div class="container">
                 <div class="navbar-header">
@@ -43,32 +44,76 @@
                     <ul class="nav navbar-nav">
                         <li><a href="unblock.html">Unblock a site</a></li>
                         <li><a href="personalstories.html">Personal stories</a></li>
-                        <li><a href="project.html">The project</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="donate.html">Donate</a></li>
                         <li><a href="getinvolved.html">Get involved</a></li>
                         <li><a href="news.html">News</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                    </ul> 
+                    </ul>
                 </div>
             </div>
-        </div>   
-        
-        
+        </div>
+
+
 
 
         <div class="container content">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-9">
                     <h2>What's the problem?</h2>
                     <p>Filtering technologies are being promoted by government as a means to prevent children from accessing inappropriate sexual material. However in practice, many more people are finding themselves behind filters, which block a much wider range of material. Sometimes, like blogs or forums, this may be deliberate but not really necessary, while at other times, it can be by mistake.</p>
                     <p>This makes filters unnecessarily disruptive to the [[Open Internet]] and very difficult for website owners to understand what is happening, and correct or limit damage.</p>
-
                     <h3>Other censorship</h3>
                     <p>Other censorship is mandatory but not well documented, starting with copyright blocks. Here, court orders allow the claimant to order ISPs to block any domain or sometimes IP address that is serving copies of the original. Orders are usually drafted to be indefinite and blocking pages do not explain the legal basis not how to complain or correct mistakes. </p>
-                    <p>This will have some impact on the reports we receive of blocks on networks.</p>      
+                    <p>This will have some impact on the reports we receive of blocks on networks.</p>
                 </div>
-                <div class="col-md-6">
-                    <h2>Opportunities</h2>
+                <div class="col-md-3">
+                        <h3>Contact your MP</h3>
+                        <p>If MPs don't hear the concerns of their constituents they won't fight for the changes they want to see. So please write to your local MP to share your concerns about censorship, or better yet, meet them and discuss in person. You can find out who your MP is and how to contact them on <a href="http://www.theyworkforyou.com/">theyworkforyou.com</a>.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content-inverse">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h2>Our mission</h2>
+                        <p>To end the imposition of web blocking by:
+                        <ul class="square">
+                            <li>documenting and understanding the extent of the problem</li>
+                            <li>holding ISPs and the government accountable</li>
+                            <li>providing a place where people can learn about the real effects of filters</li>
+                            <li>offering mechanisms to discover and report problems</li>
+                            <li>maintaining an open record of online censorship</li>
+                            <li>using evidence to argue for lighter approaches that don't involve excessive use of filters</li>
+                            <li>releasing our code and data under permissive licenses for others to reuse or extend</li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container content">
+            <div class="row">
+                <div class="col-md-9">
+                    <h2>Making it so</h2>
+                    <h3>Discovering and reporting filtering problems</h3>
+                    <p>You can submit sites or pages for testing via the *****blocked.org.uk homepage*****. We then check whether the URL is blocked by the default filters of all the major UK home broadband providers. The tests are automatic. Results are returned within a few seconds and emailed to you (if you tell us your address). We also display the results of any previous tests for this URL.</p>
+                    <p>In terms of reporting and correcting filtering issues, home broadband ISPs currently lag behind mobile operators, however both types of company still lack transpareny in this area and their processes can be a pain to navigate. We have collected as much information as we can find about *****getting a site unblocked***** (unblock.html) however we think the industry could do more. </p>
+                    <h3>Collect evidence and maintain an open record of censorship</h3>
+                    <p>We have deployed a number of probes on both mobile and fixed-line ISPs. These probes test whether a particular URL is blocked on the networks to which they are connected. There are <a title="Wiki page with diagrams showing how we check URLs for censorship" href="https://wiki.openrightsgroup.org/wiki/Censorship_Monitoring_Project_Functional_Spec">overview and use case diagrams</a> on our wiki that explain the process in more detail.</p>
+                    <p>At the moment all the probes we've deployed are controleld by ORG. In future we want to extend our reach by including results from probes run by people like you.</p>
+                    <p>We are building an Android client that will allow people to help us test blocking on networks we can't reach - for example public wifi hotspots or niche mobile operators.</p>
+                    <p>We also have scripts to build a stand-alone probe on a Raspberry Pi so that you can run your very own censorship monitor at home. Browser plugins and desktop applications are possibilities too.</p>
+                    <p>See the *****Get Involved***** page for more details about these exciting developments.
+                </div>
+                <div class="col-md-3">
+                    <h3>Opportunities</h3>
                     <ul>
                     <li>Making the real behaviour of these filters transparent;</li>
                     <li>Helping website owners check whether a given filter has blocked their site erroneously;</li>
@@ -82,53 +127,8 @@
                 </div>
             </div>
         </div>
-        
-        
-        <div class="content-inverse">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-9">
-                        <h2>How can we solve that?</h2>
-
-                        <ul>
-                            <li>We want to document and understand the extent of the problem.</li>
-                            <li>We want to create an easier route for people to discover and complain when their site is blocked.</li>
-                            <li>We want to use this evidence to argue for lighter approaches, that do not try to induce excessive use of filters.</li>
-                        </ul>                    </div>
-                    <div class="col-md-3"></div>
-                </div>
-            </div>
-        </div>        
 
 
-        <div class="container content">
-            <div class="row">
-                <div class="col-md-9">
-                    <h2>What the project is doing</h2>
-
-                    <h3>Website for users to ask for website tests</h3>
-                    <p>Building on this site we want users to be able to ask for a website to be tested for blocks. Unlike the current set up, users might not know their site is blocked, but merely suspect, or want to check.</p>
-
-                    <h3>Probes to test for blocks</h3>
-                    <p>The ORG Censorship Monitoring Project aims to deploy a number of probes on both mobile and fixed-line ISPs. These probes - based on the [https://ooni.torproject.org/ OONI Project] - will be able to test whether a particular URL is blocked on an ISP. </p>
-                    <p>Some probes would likely to be ‘trusted’, i.e. under ORG’s direct control.</p>
-                    <p>Others would be provided by people like you.</p>
-                    <p>For instance, we are experimenting with an Android client that will allow people to help us test blocking in the 'wild'.</p>
-                    <p>We have also had offers to build desktop clients for people to help us test at home.</p>
-
-                    <h3>API for the probes to submit information</h3>
-                    <p>The probes will need to submit their reports to our database. We will need to know what network they are on and blocking settings are present.</p>
-
-                    <h3>Database (“middleware”) to store and analyse the reports</h3>
-                    <p>We will keep a list of blocking reports and try to learn what sites are blocked and why.</p>
-                    <p>Some information will be more trusted than other information, for instance from ORG-run probes.</p>                    
-
-                </div>
-                <div class="col-md-3"></div>
-            </div>
-        </div>
-
-        
         <div class="container content">
             <div class="row">
                 <div class="col-md-6">
@@ -141,9 +141,11 @@
                 </div>
             </div>
         </div>
- 
-         
-        
+
+
+
+
+
         <footer>
             <div class="container">
                 <div class="row">
@@ -159,7 +161,7 @@
                     </div>
                 </div>
             </div>
-        </footer>     
+        </footer>
 
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
@@ -177,8 +179,3 @@
         </script>
     </body>
 </html>
-
-
-
-
-
