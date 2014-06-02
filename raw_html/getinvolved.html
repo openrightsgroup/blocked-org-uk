@@ -13,13 +13,13 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
-        
+
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-       
+
         <link rel="icon" type="image/ico" href="favicon.ico" />
         <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
-        
     </head>
+
     <body>
         <div class="org-header">
             <div class="container">
@@ -28,9 +28,9 @@
                 </a>
             </div>
         </div>
-        
-    
-       
+
+
+
         <div class="navbar">
             <div class="container">
                 <div class="navbar-header">
@@ -48,48 +48,94 @@
                         <li><a href="getinvolved.html">Get involved</a></li>
                         <li><a href="news.html">News</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                    </ul> 
+                    </ul>
                 </div>
             </div>
-        </div>   
-        
-        
+        </div>
 
-        
-        
+
+
+
+
         <div class="content">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-9">
-                        <h1>Our mission</h1>
-                        <p>To end the imposition of web blocking by holding ISPs and the government accountable, providing a place where people can learn about the real effects of filters, offering mechanisms to report problems and maintaining an open record of online censorship, releasing our code and data under permissive licenses for others to reuse or extend.</p>
-                        <h2>Where we are</h2>
-                        <p>You can visit <a href="https://blocked.org.uk/">blocked.org.uk</a> and report that a site is being filtered inappropriately on a UK mobile network. Submitting the form emails the details to an ORG address. A member of staff receives these messages manually. When a report merits further investigation, ORG staff use mobile phones kept in the office to verify the extent of the blocking, testing the link on as many networks as they can. They might then choose to publicise the censorship via a blog post, on Twitter, or elsewhere in the media.</p>                    
-                    </div>
-                    <div class="col-md-3">
-                        <h3>Contact your MP</h3>
-                        <p>If MPs don't hear the concerns of their constituents they won't fight for the changes you they want to see. So please write to your local MP to share your concerns about censorship, or better yet, meet them and discuss in person. You can find out who your MP is and how to contact them on <a href="http://www.theyworkforyou.com/">theyworkforyou.com</a>.</p>
-                    </div>
-                </div>
-            </div>
-        </div>        
-
-        <div class="content-inverse">
-            <div class="container">
-                <div class="row">
                     <div class="col-md-12">
-                        <h2>Where we want to go next</h2>
-                        <p>We're turning blocked.org.uk into an automated censorship detecting, reporting and research platform. The next version of the system will accept URLs to test through the blocked.org.uk website.</p>
-                        <p>A middleware API and database will queue URLs for testing. We'll deploy a botnet of probes sitting on as many different types of networks as possible. These probes will poll for URLs to test from the middleware queue, check whether they can access them, and report their results.</p>
-                        <p>The middleware system will collate these results and the website will be able to show reports based on the raw data. There's an <a href="https://wiki.openrightsgroup.org/wiki/Censorship_Monitoring_Project_Functional_Spec">activity diagram showing this process</a> in pictoral form (for a single probe and a single URL) on our wiki.</p>
+                        <h2>Our Community</h2>
+                        <p>We are working together using four main methods of communication</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Mailing list</h3>
+                        <p>All facets of the project are discussed on the <a title="ORG tech-volunteers mailing list" href="http://lists.openrightsgroup.org/listinfo/tech-volunteers">ORG technical volunteers list</a>. Please join if you want to get involved in this project!</p>
+                        <h3>IRC</h3>
+                            <p>The project teams hang out in <a title="orgtechvols IRC channel" href="irc://irc.freenode.net/orgtechvols">#orgtechvols</a> on irc.freenode.net. We hold weekly meetings there too. See our wiki for <a title="IRC meeting details and logs on the ORG wiki" href="https://wiki.openrightsgroup.org/wiki/Censorship_Monitoring_Project_IRC_Meeting_logs">logs of past meetings and details of the next one</a>.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Github</h3>
+                        <p>You can see, comment on, and contribute to our work-in-progress through our <a title="Open Rights Group on github" href="https://github.com/openrightsgroup">github repositories</a>. Issues and pull requests welcome!</p>
+                        <h3>Wiki</h3>
+                        <p>The <a title="Censorship monitoring project category on the ORG wiki" href="https://wiki.openrightsgroup.org/wiki/Category:Censorship_Monitoring_Project">Censorship Monitoring Project category</a> on the ORG wiki links to the current project documentation. Please <a title="Apply for an account to edit the ORG wiki" href="https://wiki.openrightsgroup.org/wiki/Editing_the_Wiki#Creating_an_Account">apply for a wiki account</a> if you want to edit anything.</p>
                     </div>
                 </div>
             </div>
         </div>
 
- 
-         
-        
+        <div class="content-inverse">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Our plans for the future</h2>
+                        <!-- <h2>Our next release</h2> -->
+                        <p>We'll be expanding the system to include mobile networks very soon.</p>
+                        <p>At the moment the checking infrastructure is entirely under ORG's control. In future we want to let people run their own "probes" so that we can decentralise and test across more networks. We're particularly keen to reach public wifi networks, corporate networks, and smaller mobile networks that we can't cover ourselves.</p>
+                        <p>We have a <a title="Project backlog on waffle.io" href="https://waffle.io/openrightsgroup/cmp-issues">list of other cool features we'd like to build</a> for the site. Our team of technical volunteers is currently discussing which of these to work on for the next release.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container content">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>How you can help</h2>
+                    <p>We have a page on our wiki describing the <a title="Censorship Monitoring Project Status" href="https://wiki.openrightsgroup.org/wiki/Censorship_Monitoring_Project_Status">current status</a> of each part of the project.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Website development</h3>
+                    <p>If web design is your passion we'd love your help tweaking and expanding the new blocked.org.uk site. We're particularly interested in hearing from people with Modx, PHP, bootstrap and javascript experience. You can <a title="Blocked.org.uk template design on github" href="https://github.com/openrightsgroup/blocked-org-uk">view the latest template design</a> on github. Please raise issues for any problems or suggestions you might have. Pull requests that fix issues or implement new features will be received gratefully!</p>
+                    <h3>Software development</h3>
+                    <p>We have plenty of ideas for features to add to our web back-end, database and API, and we're also producing libraries in various languages to help others build on our work. If you have PHP skills you can <a title="Censorship monitoring project API code repository on github" href="https://github.com/openrightsgroup/Blocking-Middleware">help improve our API</a>. We also have a <a title="Java library for ORG's probe API on github" href="https://github.com/openrightsgroup/Hadrians-garden">Java library in progress</a> if that's more your thing. If you don't see a library in your favourite language, why not start one? The <a title="Censorship Monitoring Project middleware API documentation on the ORG wiki" href="https://wiki.openrightsgroup.org/wiki/Censorship_Monitoring_Project_API">API documentation</a> is on our wiki.</p>
+                    <p>We have an <a title="App to detect internet filtering on google play" href="https://play.google.com/store/apps/details?id=uk.org.blocked.app">android app</a> (<a title="Android app source code on github" href="https://github.com/openrightsgroup/Android-Probe">source code</a>), a <a title="A python probe using the BlockingMiddleware API on github" href="https://github.com/dantheta/OrgProbe">python probe</a> and a <a title="Lepidopter image source code on github" href="https://github.com/openrightsgroup/lepidopter">Raspberry Pi image</a> set up to run <a title="Open Observatory of Network Interference" href="https://ooni.torproject.org/">OONI-probe</a>. We would love people to install, test, and hack on these.</p>
+                    <p>You are welcome to submit issues or pull requests against any of the repositories.</p>
+                    <h3>Testing</h3>
+                    <p>If you find a bug on the blocked.org.uk site, or if you want to make a suggestion or comment, you can <a title="Blocked.org.uk issues on github" href="https://github.com/openrightsgroup/blocked-org-uk/issues">raise an issue on github</a>. Please raise one issue per bug / comment / suggestion so they can be worked on separately.</p>
+                    <p>You can also download and test the <a title="App to detect internet filtering on google play" href="https://play.google.com/store/apps/details?id=uk.org.blocked.app">android app</a>. Report bugs either via the Android interface or by raising issues on <a title="Android app source code on github" href="https://github.com/openrightsgroup/Android-Probe">github</a>.</p>
+                    <p>Lepidopter, the OONI probe image for Raspberry Pi, is also ready for testing. You can download the scripts to build the image from <a title="Lepidopter image source code on github" href="https://github.com/openrightsgroup/lepidopter">ORG's fork of the lepidopter github repository</a>. Again, we're using github issues to collect reports of any problems you find or suggestions for improvements.</p>
+                    <p>Any data you collect during these tests will help fill our database with results - which will help with other aspects of the project.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Interpretation of results</h3>
+                    <p>How does a probe know whether the response it receives to a HTTP request is the right resource or a message saying the page is blocked? Can we interpret blocking categories automatically? How can we make sense of the data we're collecting it and use it to achieve our goals? If these sound like interesting discussions you should <a title="ORG tech-volunteers mailing list" href="http://lists.openrightsgroup.org/listinfo/tech-volunteers">join our mailing list</a> and share your thoughts with us.</p>
+                    <p>We also need people to work on extracting, transforming and displaying the data we collect. We don't have any code to do this at the moment, but if you'd like to help out in this area, introduce yourself on the list and hit us up with your ideas.</p>
+                    <h3>Documentation</h3>
+                    <p>You can contribute documentation or translations for any software component or the website itself. Most areas are undocumented however the <a title="Censorship Monitoring Project middleware API documentation on the ORG wiki" href="https://wiki.openrightsgroup.org/wiki/Censorship_Monitoring_Project_API">API has reasonable documentation</a> on the wiki. You can either create wiki pages or github pull requests with any content you write.</p>
+                    <h3>Advocacy and publicity</h3>
+                    <p>There are a number of ways you can help advocate for the project:</p>
+                    <ul class="square">
+                    <li><a href="https://blocked.org.uk/">Report blocking via this site</a>. We're really interested in hearing compelling stories behind censored sites, so if you're a site owner or you've been prevented from accessing important information, please consider telling us about it.</li>
+                    <li>Spread the word. When you hear your friends complaining about site blocking or discussing censorship, send them to this site.</li>
+                    <li>Be part of the national conversation. Blog, tweet, post and comment about these issues, what they mean to you, and how you think things should work.</li>
+                    <li>Write to your MP, your ISP, and your local paper. The more people, companies and politicians we can get on our side, the more likely we are to win the political battle against online censorship.</li>
+                    <li><a title="ORG local groups" href="[[~6493]]">*****Join an ORG local group***** - or form your own</a>! Get together with like-minded people in your area, discuss the issues, and take action.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
         <footer>
             <div class="container">
                 <div class="row">
@@ -105,7 +151,8 @@
                     </div>
                 </div>
             </div>
-        </footer>     
+        </footer>
+
 
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
@@ -121,5 +168,6 @@
             g.src='//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
+
     </body>
 </html>
