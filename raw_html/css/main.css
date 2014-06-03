@@ -31,11 +31,6 @@ body {
 .navbar-brand {
     font-size: 4.8rem;
     font-weight: 900;
-    padding: 6px 10px;
-    }
-
-.navbar a {
-    color: #2e2e2e;
     }
 
 .navbar-collapse {
@@ -46,9 +41,13 @@ body {
     background: #d62027;
     color: white;
     }
-        
+
 .nav .active a {
     color: #d62027;
+    }
+
+.nav a {
+    color: black;
     }
     
 /* full width nav */
@@ -59,7 +58,7 @@ body {
         }
         
     .navbar-nav > li > a {
-            padding: 24px 0 0 24px;
+            padding: 30px 0 0 24px;
         }
 
     .navbar-collapse {
@@ -74,6 +73,13 @@ body {
         color: #d62027;
         }
 
+    .navbar {
+        margin-bottom: 30px;
+        }
+
+    .navbar-brand {
+        padding: 12px 10px;
+        }
 }
     
 /* main content */
