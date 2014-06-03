@@ -71,10 +71,20 @@
                     <div class="col-md-6">
                         <h3>Spread the word</h3>
                         <p>If you have a free moment, please let others know that you've checked a site for filtering.</p>
-                        <p>
-                            <a href="https://twitter.com/OpenRightsGroup">Twitter</a>
-                            <a href="https://www.facebook.com/openrightsgroup">Facebook</a>
-                            <a href="https://plus.google.com/116543318055985390327">Google+</a>
+                        <p> ****** embed page URL in hrefs *******
+                            <a href="http://www.facebook.com/sharer.php?u={{ $share_url }}" target="_blank" onClick='showPopup(this.href);return(false);'>
+                                Share on Facebook
+                            </a>
+
+                            <!-- Twitter -->
+                            <a href="http://twitter.com/share?url={{ $share_url }}&text=I've%20just%20updated%20my%20gift%20list%20on%20MyGiftClues.com" target="_blank" onClick='showPopup(this.href);return(false);'>
+                                Share on Twitter
+                            </a>
+
+                            <!-- Google+ -->
+                            <a href="https://plus.google.com/share?url={{ $share_url }}" target="_blank" onClick='showPopup(this.href);return(false);'>
+                                Share on GPlus+
+                            </a>
                         </p>
                         
                         <h3>The project</h3>
