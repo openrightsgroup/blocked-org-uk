@@ -46,7 +46,10 @@ body {
     background: #d62027;
     color: white;
     }
-    
+        
+.nav .active a {
+    color: #d62027;
+    }
     
 /* full width nav */
     
@@ -70,6 +73,7 @@ body {
         text-decoration: underline;
         color: #d62027;
         }
+
 }
     
 /* main content */
@@ -120,8 +124,25 @@ a:hover {
 
 .story-small h3 {
     margin-top: 0;
-}
+    }
+
+.story p{
+    font-style: italic;
+    }
     
+.story .name,
+.story .details {
+    font-style: normal;
+    font-weight: bold;
+    } 
+    
+.story .name{
+    text-align: center;
+    }
+    
+    .story .person {
+        padding-top: 24px;
+    }
 
 /* news */
 
