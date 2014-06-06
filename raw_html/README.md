@@ -48,3 +48,14 @@ This is the raw HTML to be put into modx...
 * Contact form for ORG if people have trouble unblocking
 * Contact MP/take action stuff <- is there a page on ORG (or another site) where you enter your postcode and it gets your MP and a form to contact them like I've seen on some sites (38 degrees??) I think this would be good to make it easy to do. I've added in placeholder text for this on a couple of pages.
 * JS sexiness for form
+
+## License and credits
+
+Content is released under a [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/) license.
+Code is released under the General Public License version 3.
+
+We reused the following software components to make this:
+
+- The [Bootstrap](http://getbootstrap.com/) front-end framework for responsive, mobile first projects on the web (MIT license).
+
+Thanks!
