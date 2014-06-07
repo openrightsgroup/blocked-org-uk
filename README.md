@@ -65,3 +65,16 @@ If you need help with any of these steps or you don't understand the terms being
 10. A member of the web team will merge your pull request and this will close the issue automatically if you've tagged it correctly. If they need any more information or have questions about your changes they will start a conversation with you on the pull request's thread.
 
 We hope you enjoy contributing. Thanks in advance for your hard work!
+
+License and credits
+-------------------
+
+Content is released under a [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/) license.
+Code is released under the General Public License version 3.
+
+We reused the following software components to make this:
+
+- The [Bootstrap](http://getbootstrap.com/) front-end framework for responsive, mobile first projects on the web (MIT license).
+
+Thanks!
+
