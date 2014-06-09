@@ -128,7 +128,8 @@ a:hover {
     
 /* personal stories */
 
-.story-small h3 {
+.story-small h3,
+.heading-top {
     margin-top: 0;
     }
 
