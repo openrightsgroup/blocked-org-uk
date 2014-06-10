@@ -72,9 +72,15 @@ License and credits
 Content is released under a [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/) license.
 Code is released under the General Public License version 3.
 
-We reused the following software components to make this:
+We reused the following software and creative components to make this:
 
-- The [Bootstrap](http://getbootstrap.com/) front-end framework for responsive, mobile first projects on the web (MIT license).
+- [Bootstrap](http://getbootstrap.com/) (MIT license)
+- [jquery](https://jquery.org/license/) (MIT license)
+- [Social share icons](https://github.com/panzi/SocialSharePrivacy/) (MIT license)
+- [Circles.js](https://github.com/lugolabs/circles) (MIT license)
+- [Modernizr](http://modernizr.com/) (MIT & BSD licenses)
+- [Lato font](https://www.google.com/fonts/specimen/Lato) (SIL Open Font License, 1.1)
+- [REM polyfill](https://github.com/chuckcarpenter/REM-unit-polyfill) (MIT license)
 
 Thanks!
 
