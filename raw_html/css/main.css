@@ -172,6 +172,14 @@ a:hover {
     border-color: #04665e;
     }
 
+.content-inverse .btn-primary:hover,
+.content-inverse .btn-primary:focus,
+.content-inverse .btn-primary:active,
+.content-inverse .btn-primary.active {
+    background-color: #14867e;
+    border-color: #04665e;
+    }
+
 .content-inverse a {
     color: white;
     text-decoration: underline;

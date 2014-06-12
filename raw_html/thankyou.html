@@ -78,9 +78,7 @@
                         </p>
 
                         <div class="share"></div>
-                        
-                        <h3>The project</h3>
-                        <p>We are working alongside our community of activists to scrutinise the system of filtering that has been implemented in the UK without parliamentary process and uphold free expression.</p>
+
                         
                         <p>Find out more about *****UK filtering and it's history ******</p>
                     </div>
@@ -91,8 +89,9 @@
 
         <div class="container content">
             <div class="row">
-                <div class="col-md-9">
-                    <h2>Results for http://www.example.com</h2>
+                <div class="col-md-6">
+                    <h2>Results for:</h2>
+                    <h3>http://www.example.com</h3>
                     <p>We have no previous test results for http://www.example.com, if this is the first time that the site has been submitted it can take some time for our system to check it on the various ISPs.</p>
                     <p>Check back shortly and you should start to see the results as they filter through.</p>
                     <p>If you entered your email we will send you a notification.</p>
@@ -100,10 +99,10 @@
                     <div class="table-responsive">
                       <table class="table table-hover table-striped table-bordered">
                           <tr class="active">
-                              <th>Network</th>
-                              <th>Status</th>
-                              <th>Last checked</th>
-                              <th>Last Blocked</th>
+                              <th>ISP</th>
+                              <th>Result</th>
+                              <th>Last check on</th>
+                              <th>Last blocked on</th>
                           </tr>
                           <tr class="success">
                               <td>AAISP</td>
@@ -120,10 +119,116 @@
                       </table>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <h2>Support us</h2>
-                    <p>This tool was only possible thanks to the hard work of Open Rights Group volunteers and staff. If you'd like to help us develop the project and do more work like this, please considering ***** donating ***** or ***** joining Open Rights Group *****.</p>
-                    <p>We campaign and research on your behalf to stand up for digital rights.</p>
+
+                <div class="col-md-6">
+                    <h2>Help</h2>
+                    <h3>http://www.exampdfgdfgdfgdfgdfgle.com</h3>
+                    <form role="form" method="post" action=''>
+                        <div class="form-group">
+                            <label for="category">How would you categorise the site? (optional)</label>
+                            <select id="category" class="form-control" name="category">
+                                <option>Select a category</option>
+                                <option>Business</option>
+                                <option>Charity and non-profit</option>
+                                <option>Community</option>
+                                <option>Education</option>
+                                <option>Financial</option>
+                                <option>Government</option>
+                                <option>News</option>
+                                <option>Personal</option>
+                                <option>Religious</option>
+                                <option>Shopping</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="type">What type of site is it? (optional)</label>
+                            <select id="type" class="form-control" name="type">
+                                <option>Select a type</option>
+                                <option>Blog</option>
+                                <option>File sharing</option>
+                                <option>File storage</option>
+                                <option>Forum</option>
+                                <option>Media consumption</option>
+                                <option>Real-time chat</option>
+                                <option>Search engine</option>
+                                <option>Social network</option>
+                                <option>Software service</option>
+                                <option>Static</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="content">Which of these (if any) best describes the site content? (optional)</label>
+                            <select id="content" class="form-control" name="content">
+                                <option>Select content</option>
+                                <option>Alcohol</option>
+                                <option>Alcohol addiction support</option>
+                                <option>Bullying and harassment</option>
+                                <option>Bullying and harassment support</option>
+                                <option>Campaigning</option>
+                                <option>Criminal skills</option>
+                                <option>Dating</option>
+                                <option>Drugs</option>
+                                <option>Drug addiction support</option>
+                                <option>Entertainment</option>
+                                <option>Erotica</option>
+                                <option>Fashion and beauty</option>
+                                <option>Gambling</option>
+                                <option>Gambling addiction support</option>
+                                <option>Games</option>
+                                <option>Gore</option>
+                                <option>Hacking (coding and computer skills)</option>
+                                <option>Hacking (cracking and computer misuse)</option>
+                                <option>Hate speech</option>
+                                <option>Health</option>
+                                <option>LGBQT+</option>
+                                <option>Lingerie and swimware</option>
+                                <option>Nudity</option>
+                                <option>Obscenity and tastelessness</option>
+                                <option>Politics</option>
+                                <option>Pornography</option>
+                                <option>School cheating</option>
+                                <option>Sex education</option>
+                                <option>Suicide or self-harm</option>
+                                <option>Suicide or self-harm support</option>
+                                <option>Tobacco</option>
+                                <option>Tobacco addiction support</option>
+                                <option>Violence</option>
+                                <option>Violence victim support</option>
+                                <option>Weapons</option>
+                                <option>Web-blocking circumvention</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="information">Please explain how this site being blocked has affected you or your organisation (optional)</label>
+                            <textarea id="information" class="form-control" name="information">[[!+fi.information]]</textarea>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="email">Enter your email to be notified when the test has run (optional)</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Enter email (optional)">
+                        </div>
+
+                        <div class="form-group">
+                            <input id="allowcontact" type="checkbox" name="allowcontact" value="yes" [[!+fi.allowcontact:FormItIsChecked=`yes`]] />
+                            <label for="allowcontact">I'm happy for ORG to contact me about this report.</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input id="subscribereports" type="checkbox" name="subscribereports" value="yes" [[!+fi.subscribereports:FormItIsChecked=`yes`]] />
+                            <label for="subscribereports">Please email me regular blocking reports for this site.</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input id="joinlist" type="checkbox" name="joinlist" value='yes' [[!+fi.joinlist:FormItIsChecked=`yes`]] />
+                            <label for="joinlist">I'd like to join the ORG mailing list (<a href="privacy">view privacy policy</a>).</label>
+                        </div>
+
+                        <button id="home-check-site-btn" class="btn btn-primary" type="submit">Submit site for checking</button>
+                    </form>
                 </div>
             </div>
         </div>
