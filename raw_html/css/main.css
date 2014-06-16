@@ -236,6 +236,10 @@ a:hover {
     width: 100%;
     }
 
+.cta h3 {
+    margin-top: 12px;
+    }
+
 .btn-primary {
     background-color: #d62027;
     background-image: -webkit-linear-gradient(top, #d62027 0%, #b60007 100%);
