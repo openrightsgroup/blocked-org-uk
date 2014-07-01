@@ -49,7 +49,11 @@ body {
 .nav a {
     color: black;
     }
-    
+
+.navbar-header {
+    min-height: 75px;
+    }
+
 /* full width nav */
     
 @media (min-width: 926px) {
