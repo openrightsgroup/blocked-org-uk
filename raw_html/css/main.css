@@ -268,7 +268,14 @@ a:hover {
     margin-right: 10px;
     }
 
+.no-bottom-margin {
+    margin-bottom: 0;
+    }
 
+.no-top-margin {
+    margin-top: 0;
+    }
+    
 /* footer */
 
 footer {
