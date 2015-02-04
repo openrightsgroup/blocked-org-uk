@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8">
+    <title>[[++site_name]] | [[*pagetitle]]</title>
+    <meta name="description" content="">
+    <meta name="author" content="Open Rights Group">
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+  ================================================== -->
+    <link rel="stylesheet" href="stylesheets/base.css">
+    <link rel="stylesheet" href="stylesheets/skeleton.css">
+    <link rel="stylesheet" href="stylesheets/layout.css">
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="assets/images/site/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/site/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/site/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/site/apple-touch-icon-114x114.png">
+
+[[$org_site_scripts]]
+
+</head>
+<body>
+
+
+
+    <!-- Primary Page Layout
+    ================================================== -->
+
+    <!-- Delete everything in this .container and get started on your own site! -->
+<div id="topbar"><div id="ORGLink"><a href="http://www.openrightsgroup.org/campaigns/censorship"><img src="/assets/images/parody/ORG-logo.gif" alt="Open Rights Group campaign" /> </a></div></div>
+
+    <div class="container">
+<div class="sixteen.columns">[[Wayfinder? &startId=`0` &hereClass=`current` &sortBy=`menuindex`  &level=`1` &outerTpl=`topmenuul` ]]
+<div class="clearboth"></div>
+</div>
+<div class="sixteen.columns">
+            <h1 class="remove-bottom">[[*longtitle]]</h1>
+            <h5>[[*introtext]]</h5>
+            <hr />
+
+[[*content]]
+
+</div>
+<div class="sixteen.columns"> [[BookmarkThis? use=`twitter,facebook,delicious,google,linkedin,ping,stumbleupon,email` &widthImage=`16` &titleItem=`longtitle` &heightImage=16`]]</div>
+<div class="sixteen.columns">
+<ul id="footermenu">
+            <li class="first"><a href="[[~15]]">About</a></li>
+            <li><a href="[[~23]]">Contact</a></li>
+            <li><a href="[[~20]]">Press</a></li>
+            <li><a href="[[~21]]">Privacy</a></li>
+            <li><a href="[[~22]]">Licence</a></li>
+            <li><a href="[[~38]]">RSS</a></li>
+         </ul>
+</div>
+    </div><!-- container -->
+
+
+
+    <!-- JS
+    ================================================== -->
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="javascripts/tabs.js"></script>
+
+<!-- End Document
+================================================== -->
+        [[$trackerBug]]
+</body>
+</html>
