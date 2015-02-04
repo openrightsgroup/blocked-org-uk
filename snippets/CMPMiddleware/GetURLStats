@@ -1,0 +1,54 @@
+<?php
+//include CMP middleware stuff
+$path_to_cmpmiddleware = $modx->getOption('core_path').'components/cmpmiddleware/';
+include $path_to_cmpmiddleware.'cmpconfig.php';
+include_once $path_to_cmpmiddleware.'cmpfunctions.php';
+
+
+$datestamp = time();
+
+$args = array(
+        'email' => $cmpUSER,
+        'date' => $datestamp,
+        'signature' => createSignatureHash($datestamp, $cmpSECRET )
+        );
+$qs = http_build_query($args);
+
+//Get stats from API
+$APIresult = file_get_contents("$cmpAPI/status/stats?$qs");
+
+//for debugging / testing
+//echo "$cmpAPI/status/stats?$qs";
+//$APIresult = file_get_contents("https://zapi.bowdlerize.co.uk/1.2/status/stats?$qs");
+//$result = '{"success":true,"stats":{"urls_reported":"541445","urls_tested":"12421","blocked_sites_detected":"1686"}}';
+
+//basic error checking
+if ($APIresult === false) {
+    $modx->setPlaceholder('urls_reported','?');
+    $modx->setPlaceholder('urls_tested','?');
+    $modx->setPlaceholder('blocked_sites_sample_size','?');
+    $modx->setPlaceholder('blocked_sites_detected','?');
+    $modx->setPlaceholder('tests_pending','?');
+}
+else {
+    // get the JSON data back from the api
+    $urldata = json_decode($APIresult, true);
+
+    $urls_reported = $urldata['stats']['urls_reported'];
+    $urls_tested = $urldata['stats']['urls_tested'];
+    $blocked_sites_sample_size = $urldata['stats']['blocked_sites_sample_size'];
+    $blocked_sites_detected = $urldata['stats']['blocked_sites_detected'];
+    $blocked_sites_detected_default_filter = $urldata['stats']['blocked_sites_detected_default_filter'];
+    $tests_pending = $urls_reported - $urls_tested;
+
+    //for debugging purposes only
+    //$modx->log(xPDO::LOG_LEVEL_ERROR,'GetURLStats:'.$cmpAPI."/status/stats?$qs");
+
+    //Output to placeholders
+    $modx->setPlaceholder('urls_reported',$urls_reported);
+    $modx->setPlaceholder('urls_tested',$urls_tested);
+    $modx->setPlaceholder('blocked_sites_sample_size',$blocked_sites_sample_size);
+    $modx->setPlaceholder('blocked_sites_detected',$blocked_sites_detected);
+    $modx->setPlaceholder('blocked_sites_detected_default_filter',$blocked_sites_detected_default_filter);
+    $modx->setPlaceholder('tests_pending',$tests_pending);
+}

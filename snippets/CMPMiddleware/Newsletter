@@ -1,0 +1,66 @@
+<?php
+//GET FORM VALUES
+//SSQ97709WZ = userEmail
+
+$formFields = $hook->getValues();
+
+$userEmail = $formFields['SSQ97709WZ'];
+$bogoEmail = $formFields['email'];
+
+//Add corrected names back into Form Values...
+$hook->setValue('userEmail',$userEmail);
+
+//...and don't save the obfuscated or dummy ones
+$hook->setValue('SSQ97709WZ', NULL);
+$hook->setValue('email', NULL);
+
+if (($bogoEmail) == '') {
+    //Hidden field not populated, probably not spam.
+
+    //log for testing-purposes only
+    //$modx->log(xPDO::LOG_LEVEL_ERROR,'SubmitURL: submitted to e-activist');
+
+    //set POST variables for other site
+    $foreignurl = 'https://e-activist.com/ea-campaign/clientcampaign.do';
+    $formfields = array(
+            //post parameters to be sent to the other website
+            'ea_requested_action'=>urlencode('ea_submit_user_form'),
+            'ea_javascript_enabled'=>urlencode('false'),
+            'ea.AJAX.submit'=>urlencode('false'),
+            'ea.campaign.id'=>urlencode('6472'),
+            'ea.submitted.page'=>urlencode('1'),
+            'Email Address'=>urlencode($userEmail)
+            );
+
+    //url-ify the data for the POST
+    foreach($formfields as $key=>$value) {
+        $formfields_string .= $key.'='.$value.'&';
+    }
+    $formfields_string = rtrim($formfields_string,'&');
+
+    //open connection
+    $ch = curl_init();
+
+    //set the url, number of POST vars, POST data
+    curl_setopt($ch,CURLOPT_URL,$foreignurl);
+    curl_setopt($ch,CURLOPT_POST,count($formfields));
+    curl_setopt($ch,CURLOPT_POSTFIELDS,$formfields_string);
+    curl_setopt($ch,CURLOPT_FOLLOWLOCATION, 0);
+    curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
+    curl_setopt($ch,CURLOP_HEADER,1);
+
+    //execute post
+    $POSTresult = curl_exec($ch);
+
+    //debugging info
+    //echo "---<br />";
+    //echo "Formfields: ".$formfields_string.'<br />';
+    //echo "URL: ".$foreignurl.'<br />';
+    //echo "RESULT: ".$POSTresult.'<br />';
+
+    //close connection
+    curl_close($ch);
+}
+
+//must return true for FormIt to work
+return true;

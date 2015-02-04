@@ -1,0 +1,3 @@
+<?php
+$network = $_GET["network"]; 
+echo $network;

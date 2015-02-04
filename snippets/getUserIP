@@ -1,0 +1,5 @@
+<?php
+$headers = apache_request_headers(); 
+$real_client_ip = $headers["X-Forwarded-For"];
+$hook->setValue('user_ip', $real_client_ip);
+return true;
