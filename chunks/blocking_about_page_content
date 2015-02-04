@@ -1,0 +1,42 @@
+        <div class="container content">
+            <div class="row">
+                <div class="col-md-9">
+                    <h2>[[*longtitle]]</h2>
+                    <p>[[*introtext]]</p>
+                    [[*content]]
+                </div>
+                <div class="col-md-3">
+                    [[*TextAreaOne]]
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content-inverse">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        [[*TextAreaTwo]]
+                    </div>
+                    <div class="col-md-6">
+                        [[*TextAreaThree]]
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container content">
+            <div class="row">
+
+                <div class="col-md-6">
+                    [[*TextAreaFour]]
+                </div>
+                <div class="col-md-6">
+                    [[$Newsletter]]
+                </div>
+
+            </div>
+        </div>

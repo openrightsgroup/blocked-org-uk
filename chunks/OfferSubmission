@@ -1,0 +1,12 @@
+<p>We had no previous test results for [[!+ShortenedURL]], but if the site has only just been submitted it can take some time for our system to check it on the various ISPs and these will appear below as the results come in. Alternatively, you can submit the site for testing on the form on the <a href="[[~[[++site_start]]">home page</a></p>
+
+<div class="table-responsive">
+  <table class="table table-hover table-striped table-bordered" id="results">
+<tr class="">
+    <th>ISP</th>
+    <th>Result</th>
+    <th>Last check on</th>
+    <th>Last blocked on</th>
+</tr>
+  </table>
+</div>

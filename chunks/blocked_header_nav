@@ -1,0 +1,28 @@
+        <div class="org-header">
+            <div class="container">
+                Open Rights Group
+                <a href="https://www.openrightsgroup.org/">
+                    <img src="assets/site/blocked/img/openrightsgroupmini.png" width="75" height="28" alt="Open Rights Group">
+                </a>
+            </div>
+        </div>
+        
+      
+        <div class="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="glyphicon glyphicon-list"> </span>
+                    </button>
+                    <a class="navbar-brand" href="[[~[[++site_start]]]]"><img src="assets/site/blocked/img/blocked-logo.png" width="200" height="56" alt="Blocked!"></a>
+                </div>
+                <div class="navbar-collapse collapse nav-items">
+
+                        [[!Wayfinder? &startId=`0` 
+                            
+                             &level=`1` 
+                             &outerTpl=`nav` 
+                             &outerClass=`nav navbar-nav` ]]
+                </div>
+            </div>
+        </div>

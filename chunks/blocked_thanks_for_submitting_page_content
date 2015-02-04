@@ -1,0 +1,12 @@
+    [[!FormItRetriever]]
+
+    <div class="container content">
+        <div class="row">
+            <div class="col-md-3">
+                <h2>[[*longtitle]]</h2>
+            </div>
+            <div class="col-md-6">[[*content]]</div>
+            <div class="col-md-3">[[$Blocked-Share]]</div>
+        </div>
+
+    </div>

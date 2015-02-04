@@ -1,0 +1,43 @@
+
+        <div class="content-inverse">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-9">
+                        <h2>[[*longtitle]]</h2>
+                        <p>[[*introtext]]</p>
+                        [[*content]]
+                    </div>
+                    <div class="col-md-3"></div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container content">
+            <div class="row">
+
+                <div class="col-md-3"><h3>Results and reports</h3></div>
+                <div class="col-md-9">[[*TextAreaOne]]</div>
+
+            </div>
+            <div class="row">
+
+                <div class="col-md-3"><h3>Filtering, blocking and censorship</h3></div>
+                <div class="col-md-9">[[*TextAreaTwo]]</div>
+
+            </div>
+            <div class="row">
+
+                <div class="col-md-3"><h3>How it works</h3></div>
+                <div class="col-md-9">[[*TextAreaThree]]</div>
+
+            </div>
+            <div class="row">
+
+                <div class="col-md-3"><h3>Getting involved</h3></div>
+                <div class="col-md-9">[[*TextAreaFour]]</div>
+
+            </div>
+        </div>
+

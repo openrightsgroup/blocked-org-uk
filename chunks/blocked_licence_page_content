@@ -1,0 +1,40 @@
+        <div class="container content">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <h2>[[*longtitle]]</h2>
+                    <p>[[*introtext]]</p>
+                </div>
+
+            </div>
+            <div class="row">
+
+                <div class="col-md-3">
+                    <h3 class='heading-top'>[[*TitleOne]]</h3>
+                </div>
+                <div class="col-md-9">
+                    [[*TextAreaOne]]
+                </div>
+
+            </div>
+            <div class="row">
+
+                <div class="col-md-3">
+                    <h3 class='heading-top'>[[*TitleTwo]]</h3>
+                </div>
+                <div class="col-md-9">
+                    [[*TextAreaTwo]]
+                </div>
+
+            </div>
+            <div class="row">
+
+                <div class="col-md-3">
+                    <h3 class='heading-top'>[[*TitleThree]]</h3>
+                </div>
+                <div class="col-md-9">
+                   [[*TextAreaThree]]
+                </div>
+            
+            </div>
+        </div>

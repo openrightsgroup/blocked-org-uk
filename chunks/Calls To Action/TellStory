@@ -1,0 +1,42 @@
+<div class="cta">
+    <h3>Tell us your story[[!+fi.successMessage]]</h3>
+    <p>We are gathering the experiences of individuals and organisations to support our campaign against web blocking. If you have been affected by this form of censorship please tell us your story.</p>
+    <p>If you include your email we may contact you to learn more or to talk about featuring your case in our work.</p>
+
+[[!FormIt?
+    &hooks=`FormSave,email`
+    &customValidators=`PersonalStorySpamCheck`
+    &emailSubject=`Blocked - personal story`
+    &emailTo=`blocked@openrightsgroup.org`
+    &fsFormTopic=`Personal Story`
+    &validate=`information:required,
+         url:PersonalStorySpamCheck`
+    &successMessage=` - Thanks!`
+]]
+
+[[!+fi.validation_error_message:!empty=`
+    <div class="alert-error">
+        <p>Oops! 
+        [[!+fi.error.information:!empty=`<a href="[[~[[*id]]]]#information">Please type your story into the box below.</a></p>`]]
+    </div>`
+]]
+
+    <form action="[[~[[*id]]]]" method="post">
+
+        <div class="form-group">
+            <label for="information">Your story</label> 
+            <textarea id="information" class="form-control" name="information">[[!+fi.information]]</textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="SSQ97709WZ">Your email (optional)</label>
+          <input id="SSQ97709WZ" class="form-control" type="email" name="SSQ97709WZ" value="[[!+fi.SSQ97709WZ]]" />
+        </div>
+
+        <input id="url" type="hidden" name="url" value="" />
+        <input id="email" type="hidden" name="email" value="" />
+
+        <button id="home-check-site-btn" class="btn btn-primary" type="submit">Tell ORG your story</button> 
+
+    </form>
+</div>

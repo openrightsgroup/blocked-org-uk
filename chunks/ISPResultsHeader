@@ -1,0 +1,8 @@
+<div class="table-responsive">
+  <table class="table table-hover table-striped table-bordered" id="results">
+<tr class="[[+row_class]]">
+    <th>ISP</th>
+    <th>Result</th>
+    <th>Last check on</th>
+    <th>Last blocked on</th>
+</tr>

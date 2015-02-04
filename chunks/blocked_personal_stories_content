@@ -1,0 +1,89 @@
+        
+        <div class="content-inverse">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <h2>[[*longtitle]]</h2>
+                        <p>[[*introtext]]</p>
+                        <div class="cta">[[*content]]</div>
+                    </div>
+                    <div class="col-md-6">
+                        [[$TellStory]]
+                    </div>
+
+                </div>
+             </div>
+        </div>         
+
+
+        <div class="container content">
+            <div class="row pad-row-after story">
+                <div class="col-md-3">
+
+                    <img src="assets/images/blocked/personal_stories/sherightslogo.png" class="img-responsive img-circle hidden-xs hidden-sm person" alt="image">
+                    <p class="name">SheRights.com, <br>blog</p>
+                </div>
+                
+                <div class="col-md-9">
+                    <h3>Maureen Shaw, Founder & Editor-in-Chief, sherights.com</h3>
+                    <p>“In theory, web filtering sounds like a brilliant way to protect children or vulnerable populations from predators and harmful content, such as hate speech and pro-anorexia sites (to name a few). However, it's not that black-and-white; filtering begs the question of what, exactly, is harmful, to whom, and who is given the power to grant or deny access to information.</p>
+                    <p>“In the case of sherights.com, the effect of filtering boils down to advertising revenue, which is based on site visitors. If people who would normally be interested in accessing our content - which focuses on reproductive healthcare, violence against women and LGBT rights  -  are not able to view the site, it directly impacts our bottom line. But, more than that, we are concerned with the message that blocking our site sends: that pro-woman, pro-equality, pro-human rights subject matter is somehow offensive, inappropriate or otherwise problematic.</p>
+                    <p>“Our articles, while certainly bolstered by strong opinions, are written with careful analysis and an eye towards promoting gender equality. There is no reason why adolescents shouldn't visit sherights.com. If anything, we encourage youth to engage with our content - whether they agree with it or not.”</p>
+                    <p class="details">sherights.com was blocked by TalkTalk in April 2014.</p>
+                    
+                </div>
+            </div>
+
+
+            <div class="row pad-row-after story">
+                <div class="col-md-9">
+<h3>Marielle Volz, unable to access jezebel.com</h3>
+<p>Marielle had just moved to the UK from the US with her husband and her young son. As they didn't have Broadband set up at home, she was using her phone to access the Internet but when she tried to read an article on the feminist blog Jezebel.com, it was blocked. Called “Stop acting like 'bouncing back' from labor is even possible”, the article criticised the fact that there is no paid maternity leave in the United States and many women have to return to work after only 6 weeks. Marielle says, “I was so excited to move to a country with sane maternity leave policies, only to find I couldn't even read an article about it!”</p>
+
+<p>When she found that the entire blog was blocked, she became angry: “I felt like feminism had been singled out for censorship, because if a major feminist blog like Jezebel was blocked, how would other, smaller sites fare?” Getting Three to lift the block was, “an arduous process, and very embarrassing. The manager told me that I couldn't access filtered articles without entering a 4 digit pin because I had a PAYG plan.”</p>
+
+<p>As a parent, Marielle doesn't think that filters work when it comes to protecting children. Her greatest concern for her child is online bullying and harassment: “Most harassment comes from private communication, like SnapChat, or Facebook, or Twitter, or even just e-mail - all things that filtering doesn't address in the slightest. When my son gets old enough I'll have to have open and honest conversations with him about how much information he should share about himself online, how to use privacy controls and how to block people who are harassing him. While I'm at it, I might as well talk about all that other stuff as well!”</p>
+<p class="details">jezebel.com is <a href="https://www.blocked.org.uk/results?url=http://jezebel.com">blocked by Three</a>, July 2014.</p>
+                  
+<p>One upside, Three have confirmed that the advice given to Marielle is incorrect: you only need enter the PIN once to have filters removed.</p>
+                    
+                </div>
+                
+                <div class="col-md-3">
+                    <img src="assets/images/blocked/personal_stories/mariellevolz_web.jpg" class="img-responsive img-circle hidden-xs hidden-sm person" alt="image">
+                    <p class="name">Marielle Volz, <br>wanted to read Jezebel.com</p>
+                </div>
+            </div>
+
+
+
+            <div class="row story-small">
+                <div class="col-md-2">
+                    <img src="assets/images/blocked/personal_stories/philipraby.jpg" class="img-responsive img-circle hidden-xs hidden-sm">
+                </div>
+                <div class="col-md-4">
+                    <h3>Philip Raby Limited, Porsche Brokerage and Consultancy</h3>
+                    
+                    <p>Philip Raby only found out that his website www.philipraby.co.uk was blocked by O2 when one of his customers told him. As his business sells and services Porsches, it’s not clear why it would be inappropriate for children. Contacting O2 by phone and email didn’t work. It was only when he began tweeting about the problem that his site was unblocked. Philip says that it’s difficult to measure the financial impact of being blocked but, “we must have lost some business and, of course, it doesn't look great telling people the site is not suitable for under 18s!”</p>
+                
+                    
+                    
+                    <p class="details">www.philipraby.co.uk was blocked on O2.</p>
+                </div>
+
+                <div class="col-md-2">
+                    <img src="assets/images/blocked/personal_stories/aboud_dandachi.jpg" class="img-responsive img-circle hidden-xs hidden-sm">
+                </div>
+                <div class="col-md-4">
+                    <h3>Aidan van de Weyer, unable to access Aboud Dandachi's blog</h3>
+                    <p>Aidan van de Weyer found that EE was blocking access to a political blog on the Syrian War by commentator Aboud Dandachi (pictured left). Aidan says: “Preventing people seeing information about the war solely because that information is unpalatable seems to me to be a very damaging form of censorship because it hides the realities of the war.</p>
+
+<p>“I have found that non- or semi-professional social media journalists have added hugely to the understanding that I have of events in the Middle East over the last three years. This has only happened because these people can voice their views and spread their information freely. The filtering hasn't affected my daily life (just like the war hasn't), but it has shown me directly how dangerous the unintended consequences of filtering could be.”</p>
+<p class="details">Aboud Dandachi's blog is blocked on EE, O2, Sky and Vodafone.</p>
+
+                </div>
+            </div>
+
+            
+        </div>

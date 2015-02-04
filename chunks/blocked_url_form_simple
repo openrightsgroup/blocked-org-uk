@@ -1,0 +1,37 @@
+
+                [[!FormIt?
+                    &hooks=`SubmitUrl,FormSave,redirect`
+                    &redirectTo=`7451`
+                    &store=`1`
+                    &emailTpl=`blockedReportEmail`
+                    &emailSubject=`Blocked site [[+domainToCheck]]`
+                    &emailTo=`mail@richardskingdom.net`
+                    &fsFormTopic=`Blocked Site`
+                    &validate=`4DRXNE97LE:required,
+                    url:blank`
+                    &successMessage=`<div class="alert alert-success">
+                    <h3>Form sent.</h3>
+
+                ]]
+
+                [[!+fi.validation_error_message:!empty=`
+                    <div class="alert-error">
+                    <p>There was a problem</p>
+                    [[!+fi.error.4DRXNE97LE:!empty=`<p><a href="[[~[[*id]]]]#4DRXNE97LE">Site or page to check is a required field</a></p>`]]
+                    [[!+fi.error.SSQ97709WZ:!empty=`<p><a href="[[~[[*id]]]]#4DRXNE97LE">Valid email is required with selected option(s)</a></p>`]]
+                    </div>`
+                ]]
+
+                [[!+fi.successMessage]]
+
+                <form action="[[~[[*id]]]]" method="post">
+                    <div class="form-group">
+                        <label for="4DRXNE97LE">Site or page to check: [[!+fi.error.4DRXNE97LE:notempty=`<span class="label label-important">This is required</span>`]]</label> 
+                        <input id="4DRXNE97LE" class="form-control" type="text" name="4DRXNE97LE" placeholder="http://"  value="[[!+fi.4DRXNE97LE]]" />
+                    </div>
+
+                    <input id="url" type="hidden" name="url" value="" />
+                    <input id="email" type="hidden" name="email" value="" />
+
+                    <button id="home-check-site-btn" class="btn btn-primary" type="submit">Submit site for checking</button> 
+                </form>

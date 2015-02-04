@@ -1,0 +1,12 @@
+<p>Email: [[+userEmail]]</p>
+ 
+<p>Domain to check: [[+domainToCheck]]</p>
+ 
+<p>Type of site: [[+category]]</p>
+
+<p>Additional info: [[+information]]</p>
+ 
+<p>Join mailing list: [[+joinlist]]</p>
+ 
+<p>Happy to be contacted: [[+allowcontact]]</p>
+
