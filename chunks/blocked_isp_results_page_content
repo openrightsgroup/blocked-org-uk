@@ -1,0 +1,14 @@
+<div class="container content">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>[[*longtitle]]</h2>
+            <p>[[*introtext]]</p>
+            [[*content]]
+        </div>
+    </div>
+[[!GetISPStats?
+   &HeaderTpl=`ISPStatsHeader`
+   &FooterTpl=`ISPStatsFooter`
+   &ResultsTpl=`ISPStatsRow`
+]]
+</div>

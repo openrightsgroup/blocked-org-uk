@@ -1,0 +1,31 @@
+<div class="cta">
+    <h3>Keep informed</h3>
+    <p>If you would like to keep informed about ORG's work on censorship, privacy, copyright reform and definding human rights and digital civil liberties please sign up for our newsletter.</p>
+
+[[!FormIt?
+    &hooks=`Newsletter`
+    &validate=`SSQ97709WZ:required`
+    &successMessage=`Thanks!`
+]]
+
+[[!+fi.validation_error_message:notempty=`
+    <div class="alert-error">
+        <p>[[!+fi.error.SSQ97709WZ:notempty=`<a href="[[~[[*id]]]]#information">Please enter your email</a></p>`]]
+    </div>`
+]]
+
+    <form action="[[~[[*id]]]]" method="post">
+
+        <div class="form-group">
+            <label for="SSQ97709WZ">Your email</label>
+            <input id="SSQ97709WZ" class="form-control" type="email" name="SSQ97709WZ" value="[[!+fi.SSQ97709WZ]]" />
+        </div>
+
+        <input id="email" type="hidden" name="email" value="" />
+
+        <button id="home-check-site-btn" class="btn btn-primary" type="submit">Join</button>
+
+        [[!+fi.successMessage]]
+
+    </form>
+</div>

@@ -1,0 +1,7 @@
+<tr class="[[+row_class]]">
+    <td>[[+network_name]]</td>
+    <td>[[+status]]</td>
+    <td>[[+status_timestamp]]</td>
+    <td>[[+last_blocked_timestamp]]</td>
+</tr>
+

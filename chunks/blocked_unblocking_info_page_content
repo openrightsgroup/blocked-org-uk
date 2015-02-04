@@ -1,0 +1,57 @@
+        <div class="container content">
+            <div class="row">
+
+                    <div class="col-md-9">
+                        <h1>[[*pagetitle]]</h1>
+                        <p>[[*introtext]]</p>
+                        [[*content]]
+                    </div>
+                    <div class="col-md-3"></div>
+
+            </div>
+        </div>
+
+        <div class="content-inverse">
+            <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-9">
+                    [[*TextAreaSix]]
+                </div>
+                <div class="col-md-3"></div>
+
+            </div>
+            <div class="row">
+
+                <div class="col-md-6">
+                    [[*TextAreaOne]]
+                </div>
+                <div class="col-md-6">
+                    [[*TextAreaTwo]]
+                </div>
+
+            </div>
+            </div>
+        </div>
+
+
+        <div class="container content">
+            <div class="row">
+
+                    <div class="col-md-9">
+                        [[*TextAreaThree]]
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+                <div class="row">
+
+                    <div class="col-md-6">
+                       [[*TextAreaFour]]
+                    </div>
+                    <div class="col-md-6">
+                        [[*TextAreaFive]]
+                    </div>
+
+            </div>
+        </div>

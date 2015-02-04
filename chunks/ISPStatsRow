@@ -1,0 +1,24 @@
+                <div class="col-md-3">
+                    <div class="stat">
+                        <p>[[!+ispstats.isp]]</p>
+                        <p class="big-stat">[[!+ispstats.blocked]]</p>
+                        <p class="little-stat">SITES BLOCKED OF [[!+ispstats.total]]</p>
+                    </div>
+                    <div class="graph">
+                        <div class="circle-graph-small float-left" id="graph-percent-blocked-[[!+ispstats.isp]]"></div>
+                        <script>
+                    Circles.create({
+                        id:         'graph-percent-blocked-[[!+ispstats.isp]]',
+                        percentage: [[!+ispstats.blocked]]/[[!+ispstats.total]]*100,
+                        radius:     36,
+                        width:      2,
+                        number:     Math.round([[!+ispstats.blocked]]/[[!+ispstats.total]]*100),
+                        text:       '%',
+                        colors:     ['#FFE7E7', '#D62027'],
+                        duration:   400
+                    });
+                        </script>
+                        <p>BLOCKED</p>
+                    </div>
+
+                </div>

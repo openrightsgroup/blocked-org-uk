@@ -1,0 +1,125 @@
+<form action="[[~[[*id]]]]" method="post">
+
+  <input id="4DRXNE97LE" class="form-control" type="hidden" name="4DRXNE97LE" value="[[!+fi.domainToCheck]]" />
+
+<p>If you can provide us with more information about the site, and how it being over- or under-blocked has affected you personally, then it will help ORG campaign against censorship.</p>
+
+<div class="form-group">
+  <label for="category">How would you categorise the organisation that runs the site? (optional)</label>
+  <select id="category" class="form-control" name="category">
+    <option>Select a category</option>
+    <option>None of these / other</option>
+    <option>Business</option>
+    <option>Charity and non-profit</option>
+    <option>Community</option>
+    <option>Education</option>
+    <option>Financial</option>
+    <option>Government</option>
+    <option>News</option>
+    <option>Personal</option>
+    <option>Religious</option>
+    <option>Shopping</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="type">What type of site is it, e.g. blog or news? (optional)</label>
+  <select id="type" class="form-control" name="type">
+    <option>Select a type</option>
+    <option>None of these / other</option>
+    <option>Blog</option>
+    <option>File sharing</option>
+    <option>File storage</option>
+    <option>Forum</option>
+    <option>Media consumption</option>
+    <option>Real-time chat</option>
+    <option>Search engine</option>
+    <option>Social network</option>
+    <option>Software service</option>
+    <option>Static</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="content">Which of these (if any) best describes the site content? (optional)</label>
+  <select id="content" class="form-control" name="content">
+    <option>Select content</option>
+    <option>None of these</option>
+    <option>Alcohol</option>
+    <option>Alcohol addiction support</option>
+    <option>Bullying and harassment</option>
+    <option>Bullying and harassment support</option>
+    <option>Business news and analysis</option>
+    <option>Campaigning</option>
+    <option>Criminal skills</option>
+    <option>Current affairs</option>
+    <option>Dating</option>
+    <option>Disability</option>
+    <option>Drugs</option>
+    <option>Drug addiction support</option>
+    <option>Entertainment</option>
+    <option>Erotica</option>
+    <option>Fashion and beauty</option>
+    <option>Finance and banking</option>
+    <option>Gambling</option>
+    <option>Gambling addiction support</option>
+    <option>Games</option>
+    <option>Gore</option>
+    <option>Hacking (coding and computer skills)</option>
+    <option>Hacking (cracking and computer misuse)</option>
+    <option>Hate speech</option>
+    <option>Health</option>
+    <option>Internet culture</option>
+    <option>LGBQT+</option>
+    <option>Lingerie and swimware</option>
+    <option>Linux, free and open source software</option>
+    <option>Nudity</option>
+    <option>Obscenity and tastelessness</option>
+    <option>Politics</option>
+    <option>Pornography</option>
+    <option>School cheating</option>
+    <option>Sex education</option>
+    <option>Suicide or self-harm</option>
+    <option>Suicide or self-harm support</option>
+    <option>Transport</option>
+    <option>Travel and holidays</option>
+    <option>Tech news and analysis</option>
+    <option>Tobacco</option>
+    <option>Tobacco addiction support</option>
+    <option>Violence</option>
+    <option>Violence victim support</option>
+    <option>Weapons</option>
+    <option>Web-blocking circumvention</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="information">Please explain how this site being over- or under-blocked has affected you or your organisation (optional)</label> 
+  <textarea id="information" class="form-control" name="information">[[!+fi.information]]</textarea>
+</div>
+
+<div class="form-group">
+  <input id="allowcontact" type="checkbox" name="allowcontact" value="yes" [[!+fi.allowcontact:FormItIsChecked=`yes`]] /> 
+  <label for="allowcontact">I'm happy for ORG to contact me about this report.</label>
+</div>
+
+<div class="form-group">
+  <input id="subscribereports" type="checkbox" name="subscribereports" value="yes" [[!+fi.subscribereports:FormItIsChecked=`yes`]] /> 
+  <label for="subscribereports">Please email me regular blocking reports for this URL.</label>
+</div>
+
+<div class="form-group">
+  <input id="joinlist" type="checkbox" name="joinlist" value='yes' [[!+fi.joinlist:FormItIsChecked=`yes`]] /> 
+  <label for="joinlist">I'd like to join the ORG mailing list (<a href="[[~21]]">view privacy policy</a>).</label>
+</div>
+
+<div class="form-group">
+  <label for="SSQ97709WZ">Your email (required if you want to receive emails from us)</label>
+  <input id="SSQ97709WZ" class="form-control" type="email" name="SSQ97709WZ" value="[[!+fi.SSQ97709WZ]]" />
+</div>
+
+<input id="url" type="hidden" name="url" value="" />
+<input id="email" type="hidden" name="email" value="" />
+
+<button id="home-check-site-btn" class="btn btn-primary" type="submit">Submit details</button> 
+</form>

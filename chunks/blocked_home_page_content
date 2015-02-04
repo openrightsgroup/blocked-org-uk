@@ -1,0 +1,90 @@
+[[!GetURLStats]]
+
+<div class="container content">
+    <div class="row">
+
+        <div class="col-md-6">
+            <h2>[[*longtitle]]</h2>
+            <p>[[*introtext]]</p>
+            [[*content]]
+        </div>
+
+        <div class="col-md-3"></div>
+
+        <div class="col-md-3">
+            <div class="stat">
+                <div class="circle-graph-small float-left" id="graph-percent-blocked"></div>
+                <script>
+                Circles.create({
+                    id:         'graph-percent-blocked',
+                    percentage: [[!+blocked_sites_detected]]/[[!+blocked_sites_sample_size]]*100,
+                    radius:     36,
+                    width:      2,
+                    number:     Math.round([[!+blocked_sites_detected]]/[[!+blocked_sites_sample_size]]*100),
+                    text:       '%',
+                    colors:     ['#FFE7E7', '#D62027'],
+                    duration:   400
+                });
+                </script>
+            </div>
+
+            <div class="stat">
+                <p class="big-stat">[[!+blocked_sites_detected]]</p>
+                <p class="little-stat">SITES BLOCKED</p>
+                <p>BY STRICT FILTERS</p>
+            </div>
+
+            <div class="stat">
+                <div class="circle-graph-small float-left" id="graph-percent-blocked-2"></div>
+                <script>
+                Circles.create({
+                    id:         'graph-percent-blocked-2',
+                    percentage: [[!+blocked_sites_detected_default_filter]]/[[!+blocked_sites_sample_size]]*100,
+                    radius:     36,
+                    width:      2,
+                    number:     Math.round([[!+blocked_sites_detected_default_filter]]/[[!+blocked_sites_sample_size]]*100),
+                    text:       '%',
+                    colors:     ['#FFE7E7', '#D62027'],
+                    duration:   400
+                });
+                </script>
+            </div>
+
+            <div class="stat">
+                <p class="big-stat">[[!+blocked_sites_detected_default_filter]]</p>
+                <p class="little-stat">SITES BLOCKED</p>
+                <p>BY DEFAULT FILTERS</p>
+            </div>
+
+            <p>Test data: <a href="http://www.alexa.com/topsites">Alexa top 100,000 sites</a><br/>
+            Click here for <a href="[[~7506]]">results per ISP</a></p>
+        </div>
+
+    </div>
+</div>
+
+<div class="content-inverse no-bottom-margin">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6">
+                [[*TextAreaOne]]
+                [[$blocked_url_form]]
+            </div>
+
+            <div class="col-md-3"></div>
+
+            <div class="col-md-3">
+                <div class="stat">
+                    <p class="big-stat">[[!+tests_pending]]</p>
+                    <p class="little-stat">TESTS PENDING</p>
+                </div>
+                <div class="stat">
+                    <p class="big-stat">[[!+urls_tested]]</p>
+                    <p class="little-stat">SITES CHECKED</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

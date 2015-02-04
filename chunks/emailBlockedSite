@@ -1,0 +1,8 @@
+<b>submitter:</b> [[+contact_name]]</br>
+<b>email:</b> [[+contact_email]]<br />
+<b>url:</b> [[+blocked_url]]<br />
+<b>provider:</b> [[+network_provider]]<br />
+<b>additional:</b> [[+additional_info]]<br />
+<b>contactable:</b> [[+contactable]]<br />
+<b>ip_address:</b> [[+user_ip]]<br />
+<b>opt_in:</b> [[+opt_in]]<br />

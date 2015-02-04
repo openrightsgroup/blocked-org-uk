@@ -1,0 +1,33 @@
+[[!GetUrlFromLink]]
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>[[*longtitle]]</h2>
+                        <p>[[*introtext]]</p>
+                    </div>
+                    <div class="col-md-6">
+                        [[*TextAreaOne]]
+                    </div>
+                    <div class="col-md-6">
+                        [[*TextAreaTwo]]
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container content">
+            <div class="row">
+
+                    <div class="col-md-12">
+[[!GetURLHistory?
+  &Url=`[[!+fi.domainToCheck]]`
+  &HeaderTpl=`ISPResultsHeader`
+  &FooterTpl=`ISPResultsFooter`
+  &ResultsTpl=`ISPResults`
+  &NoResultsTpl=`OfferSubmission`
+  ]]
+                    </div>
+            </div>
+        </div>

@@ -1,0 +1,71 @@
+[[!GetUrlFromLink]]
+        <div class="content-inverse">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>[[*longtitle]]</h2>
+                        <h3 title="[[!+fi.domainToCheck]]">[[!+ShortenedURL]]</h3>
+
+                        [[*content]]
+
+                    </div>
+                    <div class="col-md-3">
+                        [[$Blocked-Share]]
+                    </div>
+                    <div class="col-md-3">
+                        [[*TextAreaOne]]
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container content">
+            <div class="row">
+               <div class="col-md-6">
+                    <h2>Results</h2>
+                    <h3 title="[[!+fi.domainToCheck]]">[[!+ShortenedURL]]</h3>
+
+[[!GetURLHistory?
+  &Url=`[[!+fi.domainToCheck]]`
+  &HeaderTpl=`ISPResultsHeader`
+  &FooterTpl=`ISPResultsFooter`
+  &ResultsTpl=`ISPResults`
+  &NoResultsTpl=`OfferSubmission`
+  ]]
+
+                </div>
+                <div class="col-md-6">
+<h2>Tell us more</h2>
+<!--                    <h3>[[!+ShortenedURL]]</h3>-->
+
+[[!FormIt?
+   &hooks=`SubmitUrl,FormSave,redirect`
+   &redirectTo=`7482`
+   &emailTpl=`blockedReportEmail`
+   &store=`1`
+   &emailSubject=`Blocked site [[+fi.domainToCheck]]`
+   &emailTo=`blocked@openrightsgroup.org`
+   &fsFormTopic=`Blocked Site`
+   &customValidators=`EmailChecker`
+   &validate=`SSQ97709WZ:EmailChecker,
+      url:blank`
+   &successMessage=`<div class="alert alert-success">
+      <h3>Thanks!</h3>
+    </div>`
+]]
+
+[[!+fi.validation_error_message:!empty=`
+    <div class="alert-error">
+        <p>There was a problem</p>
+        [[!+fi.error.SSQ97709WZ:!empty=`<p><a href="[[~[[*id]]]]#SSQ97709WZ">Valid email is required with the selected option(s)</a></p>`]]
+    </div>`
+]]
+
+[[!+fi.successMessage]]
+
+[[$blocked_website_details_form]]
+
+</div>
+            </div>
+        </div>

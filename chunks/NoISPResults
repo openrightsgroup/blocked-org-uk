@@ -1,0 +1,13 @@
+<p>We have no previous test results for this URL. If this is the first time that the site has been submitted it can take some time for our system to check it across the various ISPs we monitor. This is especially true for mobile networks.</p>
+<p>Stay on this page and you should start to see the results filter through after a few tens of seconds.</p>
+
+<div class="table-responsive">
+  <table class="table table-hover table-striped table-bordered" id="results">
+<tr class="">
+    <th>ISP</th>
+    <th>Result</th>
+    <th>Last check on</th>
+    <th>Last blocked on</th>
+</tr>
+  </table>
+</div>
