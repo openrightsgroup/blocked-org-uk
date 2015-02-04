@@ -1,0 +1,26 @@
+<?php
+//temporary hardcoded email address
+$emailTo = 'matt@killock.net';
+
+//GET FORM VALUES
+//SSQ97709WZ = userEmail
+
+$formFields = $hook->getValues();
+$spam = $formFields['spam'];
+$userEmail = $formFields['SSQ97709WZ'];
+$information = $formFields['information'];
+
+//if spam then do nothing
+if ($spam = 'yes') {
+    return true;
+}
+
+//email the details to ORG
+$subject = 'Blocked.org.uk Personal Story Submission';
+$message = 'Submitted email: '.$userEmail. "\r\n";
+$message .= 'Info posted: '.$information. "\r\n";
+$headers = 'From: website@blocked.org.uk' . "\r\n";
+
+mail($emailTo, $subject, $message, $headers);
+
+return true;

@@ -1,0 +1,28 @@
+<?php
+//get tick options
+$userEmail = $validator->fields['SSQ97709WZ'];
+$allowcontact = $validator->fields['allowcontact'];
+$joinlist = $validator->fields['joinlist'];
+$subscribereports = $validator->fields['subscribereports'];
+
+//empty or invalid emails not acceptable
+if (empty ($userEmail) || filter_var($userEmail, FILTER_VALIDATE_EMAIL) == $false) {
+
+    //different messages for each tick box
+    if ($allowcontact != $null) {
+        $validator->addError($key,'Valid email is required for ORG to contact you');
+        return $false;
+    }
+    if ($subscribereports != $null) {
+        $validator->addError($key,'Valid email is required to receive reports');
+        return $false;
+    }
+    if ($joinlistt != $null) {
+        $validator->addError($key,'Valid email is required to subscribe to mailing list');
+        return $false;
+    }
+}
+
+
+//return true if validated ok
+return $true;

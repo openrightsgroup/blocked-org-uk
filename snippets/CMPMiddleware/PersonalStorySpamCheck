@@ -1,0 +1,14 @@
+<?php
+//get tick options
+$bogoEmail = $validator->fields['email'];
+$bogoUrl = $validator->fields['url'];
+
+if (($bogoEmail + $bogoUrl) == '') {
+
+    //return true if bogo fields are blank
+    $validator->fields['spam'] = 'no';
+    return $true;
+}
+
+$validator->fields['spam'] = 'yes';
+return $true;

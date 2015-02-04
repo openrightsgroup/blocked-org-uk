@@ -1,0 +1,52 @@
+<?php
+// NOTE: this snippet can be called on the thankyou page and the results page. See respective Chunks
+// Situations that must be covered:
+// 1. Thankyou page visited without first submitting url. 
+//    - FormItRetriever will return [[!+fi.domainToCheck]] as blank, $_GET['url'] will blank
+//    - Action: Do nothing, let GetURLHistory snippet redirect to home page
+// 2. Results page visited without providing a url.
+//    - FormItRetriever not called so [[!+fi.domainToCheck]] will be blank, $_GET['url'] will blank
+//    - Action: Do nothing, let GetURLHistory snippet redirect to home page
+// 3. Thankyou page visited after submitting url.
+//    - FormItRetriever will return [[!+fi.domainToCheck]] with url, $_GET['url'] will be blank
+//    - Action: leave [[!+fi.domainToCheck]] alone, return [[!+ShortenedURL]]
+// 4. Results page visited with valid url in URI
+//    - FormItRetriever not called so [[!+fi.domainToCheck]] will be blank, $_GET['url'] has url
+//    - Action: Set [[!+fi.domainToCheck]] to url, return [[+ShortenedURL]]
+
+
+// Get info
+$url = $_GET['url'];
+
+//Trim leading and trailing spaces from URLs if present
+$url = trim($url);
+
+//Strip HTML and PHP characters from $url to prevent XSS attacks
+$url = strip_tags($url);
+
+//More stripping of characters that shouldn't be in a URL
+$url = filter_var($url, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+
+$domainToCheck = $modx->getPlaceholder('fi.domainToCheck');
+
+//$modx->log(xPDO::LOG_LEVEL_ERROR,'GetUrlFromLink: URL: '.$url);
+//$modx->log(xPDO::LOG_LEVEL_ERROR,'GetUrlFromLink: domaintocheck: '.$domainToCheck);
+
+// CASE 1 & 2
+if (empty ($domainToCheck) && empty ($url)) {
+    return;
+}
+
+//CASE 3
+if (!empty ($domainToCheck) && empty ($url)) {
+    $url = $domainToCheck;
+}
+
+//CASE 4
+if (empty ($domainToCheck) && !empty ($url)) {
+    $modx->setPlaceholder('fi.domainToCheck',$url);
+}
+
+//return Shortened URL for case 3 & 4
+$ShortenedURL = (strlen($url) > 40) ? substr($url,0,37).'...' : $url;
+$modx->setPlaceholder('ShortenedURL',$ShortenedURL);

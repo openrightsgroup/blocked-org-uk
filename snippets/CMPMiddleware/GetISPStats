@@ -1,0 +1,93 @@
+<?php
+//
+// GetISPStats - get basic URL history data from ORG CMP Middleware API
+//
+// USAGE:
+// [[!GetISPStats?
+//   &HeaderTpl=`ISPStatsHeader` --- This chunk for the header of the results
+//   &FooterTpl=`ISPStatsFooter` --- This chunk for the header of the results
+//   &ResultsTpl=`ISPStatsRow`      --- This chunk is used to display stats for each ISP
+// ]]
+//
+
+//include CMP middleware stuff
+$path_to_cmpmiddleware = $modx->getOption('core_path').'components/cmpmiddleware/';
+include $path_to_cmpmiddleware.'cmpconfig.php';
+include_once $path_to_cmpmiddleware.'cmpfunctions.php';
+
+$debug = false;
+
+//get snippet arguments
+$HeaderTplChunk = $modx->getOption('HeaderTpl', $scriptProperties);
+$FooterTplChunk = $modx->getOption('FooterTpl', $scriptProperties);
+$RowTplChunk = $modx->getOption('ResultsTpl', $scriptProperties);
+
+//Query CMP API
+$datestamp = gmdate ( 'Y-m-d H:i:s');
+
+$args = array(
+        'email' => $cmpUSER,
+        'signature' => createSignatureHash($datestamp, $cmpSECRET ),
+        'date' => $datestamp
+        );
+$qs = http_build_query($args);
+$APIresult = file_get_contents("$cmpAPI/status/isp-stats?$qs");
+
+//display debug info
+if ($debug) {
+    echo "SEND: ".$cmpAPI."/status/isp-stats?$qs"."<br />";
+    echo "RCV: ".$APIresult."<br />";
+}
+
+//Output if failure
+if ($APIresult === false) {
+    //output
+    echo "ERROR Connecting to /status/isp-stats API";
+}
+
+//Output if url in results
+else {
+    //decode JSON response from API
+    $decoded = json_decode($APIresult,true);
+    $success = $decoded['success'];
+    $ispstats = $decoded['isp-stats'];
+
+    $numISPs = count($ispstats);
+
+    if ($numISPs > 0) {
+        // DISPLAY HEADER
+        if ($HeaderTplChunk) {
+            $output = $modx->getChunk($HeaderTplChunk,array());
+            echo $output;
+        }
+        // LOOP THROUGH RESULTS
+        foreach ($ispstats as $key => $ispdata) {
+            //get details
+            $isp = $key;
+            $ok = $ispdata['ok'];
+            $blocked = $ispdata['blocked'];
+            $timeout = $ispdata['timeout'];
+            $error = $ispdata['error'];
+            $dnsfail = $ispdata['dnsfail'];
+            $total = $ispdata['total'];
+
+            //output Success Chunk
+            $output = $modx->getChunk($RowTplChunk,array(
+                        'ispstats.isp' => $isp,
+                        'ispstats.blocked' => $blocked,
+                        'ispstats.timeout' => $timeout,
+                        'ispstats.error' => $error,
+                        'ispstats.dnsfail' => $dnsfail,
+                        'ispstats.total' => $total
+                        ));
+            echo $output;
+        }
+        // DISPLAY FOOTER
+        if ($FooterTplChunk ) {
+            $output = $modx->getChunk($FooterTplChunk ,array());
+            echo $output;
+        }
+    }
+}
+
+return;

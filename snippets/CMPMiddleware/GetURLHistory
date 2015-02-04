@@ -1,0 +1,162 @@
+<?php
+//
+// GetURLHistory - get basic URL history data from ORG CMP Middleware API
+//
+// USAGE:
+// [[!GetURLHistory?
+//   &Url=`http://www.example.com` --- Specify a URL
+//   &HeaderTpl=`ISPResultsHeader` --- This chunk for the header of the results
+//   &FooterTpl=`ISPResultsFooter` --- This chunk for the header of the results
+//   &ResultsTpl=`ISPResults`      --- This chunk is used when there is or has been a block
+//   &NoResultsTpl=`NoISPResults`  --- This chunk is used when there are no results
+// ]]
+//
+
+//include CMP middleware stuff
+$path_to_cmpmiddleware = $modx->getOption('core_path').'components/cmpmiddleware/';
+include $path_to_cmpmiddleware.'cmpconfig.php';
+include_once $path_to_cmpmiddleware.'cmpfunctions.php';
+
+$debug = false;
+
+//get snippet arguments
+$HeaderTplChunk = $modx->getOption('HeaderTpl', $scriptProperties);
+$FooterTplChunk = $modx->getOption('FooterTpl', $scriptProperties);
+$SuccessTplChunk = $modx->getOption('ResultsTpl', $scriptProperties);
+$FailureTplChunk = $modx->getOption('NoResultsTpl', $scriptProperties);
+$url = $modx->getOption('Url', $scriptProperties);
+
+//Annoyingly, if no FormItRetriever passed nothing to this snippet then url is the placeholder name!
+//If this happens then set to blank
+if ($url =='[[!+fi.domainToCheck]]') {
+    $url = '';
+}
+
+//if no url present, see if in $_GET
+if ($url == '') {
+    $url = $_GET['url'];
+}
+
+//if url still blank then redirect to home page
+if ($url == '') {
+    $site_url = $modx->getOption('site_url');
+    header("Location: ".$site_url);
+    die();
+}
+
+//check for 'http(s)' in url string
+if (preg_match ('/^https?:\/\/.*/',$url) == false) {
+    //$modx->log(xPDO::LOG_LEVEL_ERROR,'GetURLHistory: NO HTTP');
+    $url = 'http://'.$url;
+}
+
+//Query CMP API
+$args = array(
+        'email' => $cmpUSER,
+        'url' => $url,
+        'signature' => createSignatureHash($url, $cmpSECRET )
+        );
+$qs = http_build_query($args);
+$APIresult = file_get_contents("$cmpAPI/status/url?$qs");
+
+//display debug info
+if ($debug) {
+    echo "SEND: ".$cmpAPI."/status/url?$qs"."<br />";
+    echo 'GET: '.$_GET[url].'<br />';
+    echo "RCV: ".$APIresult."<br />";
+}
+
+//Output if failure or no entry in db
+if ($APIresult === false) {
+    //Output status in case want to use 'If' snippet
+    $modx->setPlaceholder('APISuccess','false');
+
+    //output Failure Chunk
+    $output = $modx->getChunk($NoResultsTpl,array(
+                'url' => chunk_split($url, 40, ' '),
+                ));
+}
+
+//Output if url in CMP results database
+else {
+    //Output status in case want to use 'If' snippet
+    $modx->setPlaceholder('APISuccess','true');
+
+    //decode JSON response from API
+    $decoded = json_decode($APIresult);
+    $inDB = $decoded->success;
+    $results = $decoded->results;
+    $numresults = count($results);
+
+    if ($numresults > 0) {
+        // DISPLAY HEADER
+        if ($HeaderTplChunk) {
+            $output .= $modx->getChunk($HeaderTplChunk,array(
+                        'url' => chunk_split($url, 40, ' '),
+                        ));
+        }
+
+        // LOOP THROUGH RESULTS
+        for ($i = 0; $i < $numresults; $i++) {
+            //get details
+            $result = $results[$i];
+            $network_name = $result->network_name;
+            $status = $result->status;
+            $status_timestamp = $result->status_timestamp;
+            $last_blocked_timestamp = $result->last_blocked_timestamp;
+            if ($last_blocked_timestamp == null) {
+                $last_blocked_timestamp = 'No record of prior block';
+            }
+
+
+            // set CSS class (default to blocked) - classes to use are danger, warning, success
+
+            if ($status == 'ok') {
+                if ($result->last_blocked_timestamp == null) {
+                    $row_class = 'success';
+                }
+                else { // if previously blocked show warning
+                    $row_class = 'warning';
+                }
+            }
+            else {
+                $row_class = 'danger';
+            }
+
+            //display debug info
+            if ($debug) {
+                echo "<hr>";
+                echo "network name: ".$network_name."<br />";
+                echo "status: ".$status."<br />";
+                echo "status_timestamp: ".$status_timestamp."<br />";
+                echo "last_blocked_timestamp: ".$last_blocked_timestamp."<br />";
+            }
+
+            //output Success Chunk
+            $output .= $modx->getChunk($ResultsTpl,array(
+                        'url' => chunk_split($url, 40, ' '),
+                        'inDB' => $inDB,
+                        'network_name' => $network_name,
+                        'status' => $status,
+                        'status_timestamp' => $status_timestamp,
+                        'last_blocked_timestamp' => $last_blocked_timestamp,
+                        'row_class' => $row_class,
+                        ));
+        }
+        // DISPLAY FOOTER
+        if ($FooterTplChunk ) {
+            $output .= $modx->getChunk($FooterTplChunk ,array());
+        }
+
+    }
+    // in DB, but no results
+    else {
+        //output Failure Chunk
+        $output = $modx->getChunk($NoResultsTpl,array(
+                    'url' => chunk_split($url, 40, ' '),
+                    ));
+    }
+
+}
+
+return $output;
