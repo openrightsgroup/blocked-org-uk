@@ -21,7 +21,7 @@
             <div class="row pad-row-after story">
                 <div class="col-md-3">
 
-                    <img src="assets/images/blocked/personal_stories/sherightslogo.png" class="img-responsive img-circle hidden-xs hidden-sm person" alt="image">
+                    <img src="assets/images/blocked-org-uk/personal_stories/sherightslogo.png" class="img-responsive img-circle hidden-xs hidden-sm person" alt="image">
                     <p class="name">SheRights.com, <br>blog</p>
                 </div>
                 
@@ -51,7 +51,7 @@
                 </div>
                 
                 <div class="col-md-3">
-                    <img src="assets/images/blocked/personal_stories/mariellevolz_web.jpg" class="img-responsive img-circle hidden-xs hidden-sm person" alt="image">
+                    <img src="assets/images/blocked-org-uk/personal_stories/mariellevolz_web.jpg" class="img-responsive img-circle hidden-xs hidden-sm person" alt="image">
                     <p class="name">Marielle Volz, <br>wanted to read Jezebel.com</p>
                 </div>
             </div>
@@ -60,7 +60,7 @@
 
             <div class="row story-small">
                 <div class="col-md-2">
-                    <img src="assets/images/blocked/personal_stories/philipraby.jpg" class="img-responsive img-circle hidden-xs hidden-sm">
+                    <img src="assets/images/blocked-org-uk/personal_stories/philipraby.jpg" class="img-responsive img-circle hidden-xs hidden-sm">
                 </div>
                 <div class="col-md-4">
                     <h3>Philip Raby Limited, Porsche Brokerage and Consultancy</h3>
@@ -73,7 +73,7 @@
                 </div>
 
                 <div class="col-md-2">
-                    <img src="assets/images/blocked/personal_stories/aboud_dandachi.jpg" class="img-responsive img-circle hidden-xs hidden-sm">
+                    <img src="assets/images/blocked-org-uk/personal_stories/aboud_dandachi.jpg" class="img-responsive img-circle hidden-xs hidden-sm">
                 </div>
                 <div class="col-md-4">
                     <h3>Aidan van de Weyer, unable to access Aboud Dandachi's blog</h3>

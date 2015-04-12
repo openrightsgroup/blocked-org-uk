@@ -2,7 +2,7 @@
             <div class="container">
                 Open Rights Group
                 <a href="https://www.openrightsgroup.org/">
-                    <img src="assets/site/blocked/img/openrightsgroupmini.png" width="75" height="28" alt="Open Rights Group">
+                    <img src="assets/site/blocked-org-uk/img/openrightsgroupmini.png" width="75" height="28" alt="Open Rights Group">
                 </a>
             </div>
         </div>
@@ -14,7 +14,7 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="glyphicon glyphicon-list"> </span>
                     </button>
-                    <a class="navbar-brand" href="[[~[[++site_start]]]]"><img src="assets/site/blocked/img/blocked-logo.png" width="200" height="56" alt="Blocked!"></a>
+                    <a class="navbar-brand" href="[[~[[++site_start]]]]"><img src="assets/site/blocked-org-uk/img/blocked-logo.png" width="200" height="56" alt="Blocked!"></a>
                 </div>
                 <div class="navbar-collapse collapse nav-items">
 
